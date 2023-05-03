@@ -1,0 +1,4 @@
+string host = "geleta.vybrat.eu";
+            string databazka = "c46ForSport";
+            string user = "c46jakub_geleta";
+            string password = "Jakub2544444";
