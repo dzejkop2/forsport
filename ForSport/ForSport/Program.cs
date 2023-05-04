@@ -18,21 +18,6 @@ namespace ForSport
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-
-
-            string host = "geleta.vybrat.eu";
-            string databazka = "c46ForSport";
-            string user = "c46jakub_geleta";
-            string password = "Jakub2544444";
-            string constring = "SERVER=" + host + ";" + "DATABASE=" + databazka + ";" + "UID=" + user + ";" + "PASSWORD=" + password;
-            MySqlConnection conn = new MySqlConnection(constring);
-            conn.Open();
-            string command = "select * from test123";
-            MySqlCommand cmd = new MySqlCommand(command, conn);
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-            
-
         }
     }
 }
