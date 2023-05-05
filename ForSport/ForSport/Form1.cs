@@ -14,30 +14,20 @@ namespace ForSport
 {
     public partial class Form1 : Form
     {
-        void read(string column, string table, string data)
-        {
-            Connection con = new Connection();
-            string constring = Connection.info();
-            MySqlConnection conn = new MySqlConnection(constring);
-            conn.Open();
-
-            string sql = $"select * from {table}";
-
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-            MySqlDataReader reader = cmd.ExecuteReader();
-
-            while (reader.Read())
-            {
-                data = reader.GetString(column);
-            }
-
-        }
         public Form1()
-        {
+        { 
             InitializeComponent();
-            string data = "";
-            read("12","test123", data);
-            label1.Text = data;
+        }
+        
+        static string constring = "SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c46ForSport;UID=c46forsport;PASSWORD=ForSport123456;";
+
+        private void button1_Click(object sender, EventArgs e)
+        { 
+            MySqlConnection conn = new MySqlConnection();
+            conn.ConnectionString = constring;
+            conn.Open();
+            MessageBox.Show("Connection Open!");
+            conn.Close();
         }
     }
 }
