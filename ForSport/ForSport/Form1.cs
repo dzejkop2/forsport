@@ -19,12 +19,10 @@ namespace ForSport
             InitializeComponent();
         }
         
-        static string constring = "SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c46ForSport;UID=c46forsport;PASSWORD=ForSport123456;";
-
         private void button1_Click(object sender, EventArgs e)
         { 
             MySqlConnection conn = new MySqlConnection();
-            conn.ConnectionString = constring;
+            conn.ConnectionString = "SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c46ForSport;UID=c46forsport;PASSWORD=byxB@iNT47;";
             conn.Open();
             MessageBox.Show("Connection Open!");
             conn.Close();
