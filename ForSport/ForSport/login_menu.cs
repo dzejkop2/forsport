@@ -15,15 +15,19 @@ namespace ForSport
     public partial class login_menu : Form
     {
         Database db = new Database(); // vytvorenie objektu cez ktory sa pripaja do DB
+
         public login_menu()
         {
             InitializeComponent();
             db.connect(); // samotne pripojenie, vykona sa na zaciatku programu
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
-            db.disconnect(); 
+            string name = "";
+            string password = "";
+            Login login = new Login(name, password);
         }
+
     }
 }
