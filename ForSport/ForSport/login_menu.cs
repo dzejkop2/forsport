@@ -12,20 +12,18 @@ using MySql.Data.MySqlClient;
 
 namespace ForSport
 {
-    public partial class Form1 : Form
+    public partial class login_menu : Form
     {
-        public Form1()
-        { 
+        Database db = new Database(); // vytvorenie objektu cez ktory sa pripaja do DB
+        public login_menu()
+        {
             InitializeComponent();
+            db.connect(); // samotne pripojenie, vykona sa na zaciatku programu
         }
         
         private void button1_Click(object sender, EventArgs e)
-        { 
-            MySqlConnection conn = new MySqlConnection();
-            conn.ConnectionString = "SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c46ForSport;UID=c46forsport;PASSWORD=byxB@iNT47;";
-            conn.Open();
-            MessageBox.Show("Connection Open!");
-            conn.Close();
+        {
+            db.disconnect(); 
         }
     }
 }
