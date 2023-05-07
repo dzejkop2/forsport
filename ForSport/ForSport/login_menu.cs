@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using MySql.Data.MySqlClient;
 
 
@@ -22,11 +23,27 @@ namespace ForSport
             db.connect(); // samotne pripojenie, vykona sa na zaciatku programu
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // button pre pripojenie
         {
-            string name = "";
-            string password = "";
-            Login login = new Login(name, password);
+            string username = tb_username.Text; // bere string z textboxu
+            string password = tb_password.Text; // bere string z textboxu
+            Login login = new Login(username, password);
+            if (tb_username.Text != "" && tb_password.Text != "") // pozrie ci sme zapisali meno aj heslo
+            {
+                bool valid_login = login.login_verify(); // metoda ktora vrati ci bolo uspesne prihlasenie (heslo sa zhodovalo ku menu)
+                if (valid_login == true)
+                {
+                    MessageBox.Show("Uspesne si sa prihlasil");
+                }
+                else
+                {
+                    MessageBox.Show("Prihlasenie sa nepodarilo");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Musis zadat meno aj heslo!");
+            }
         }
 
     }

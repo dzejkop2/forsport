@@ -5,6 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ForSport
 {
@@ -20,13 +21,10 @@ namespace ForSport
             this.password = heslo;
         }
 
-        Database db = new Database();
-
         public bool login_verify()
         {
-            string sql = $"SELECT username,password,id FROM login_info WHERE username LIKE {this.username}";
-            db.connect();
-            MySqlCommand command = new MySqlCommand();
+            string sql = $"SELECT username, password, id FROM login_info WHERE username = \'{this.username}\'";
+            MySqlCommand command = new MySqlCommand(sql, Database.connection);
             MySqlDataReader reader = command.ExecuteReader();
 
             string id = "";
