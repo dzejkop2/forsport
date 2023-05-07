@@ -92,8 +92,9 @@
     <Compile Include="app.Designer.cs">
       <DependentUpon>app.cs</DependentUpon>
     </Compile>
-    <Compile Include="Database.cs" />
-    <Compile Include="Login.cs" />
+    <Compile Include="Classes\Database.cs" />
+    <Compile Include="Classes\IdGenerator.cs" />
+    <Compile Include="Classes\Login.cs" />
     <Compile Include="login_menu.cs">
       <SubType>Form</SubType>
     </Compile>

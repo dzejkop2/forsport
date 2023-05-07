@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using ForSport.Classes;
 using MySql.Data.MySqlClient;
 
 
@@ -20,7 +21,13 @@ namespace ForSport
         public login_menu()
         {
             InitializeComponent();
-            db.connect(); // samotne pripojenie, vykona sa na zaciatku programu
+            db.connect(); // samotne pripojenie, vykona sa na zaciatku programu\
+
+            /* debug id generatoru
+            IdGenerator id = new IdGenerator();
+            id.new_id();
+            MessageBox.Show(id.id);
+            */
         }
 
         private void button1_Click(object sender, EventArgs e) // button pre pripojenie
