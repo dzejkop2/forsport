@@ -28,7 +28,6 @@ C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\bin\Debug\System.Runt
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.csproj.AssemblyReference.cache
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.csproj.SuggestedBindingRedirects.cache
-C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.Form1.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.Properties.Resources.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.csproj.GenerateResource.cache
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.csproj.CoreCompileInputs.cache
@@ -109,3 +108,4 @@ C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.c
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.exe
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.pdb
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.login_menu.resources
+C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.login_menu.resources

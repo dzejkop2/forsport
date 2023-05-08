@@ -41,6 +41,8 @@ namespace ForSport
                 if (valid_login == true)
                 {
                     MessageBox.Show("Uspesne si sa prihlasil");
+                    new app().Show();
+                    this.Hide();
                 }
                 else
                 {
