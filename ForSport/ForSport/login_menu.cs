@@ -16,13 +16,12 @@ namespace ForSport
 {
     public partial class login_menu : Form
     {
-        Database db = new Database(); // vytvorenie objektu cez ktory sa pripaja do DB
+        
 
         public login_menu()
         {
             InitializeComponent();
-            db.connect(); // samotne pripojenie, vykona sa na zaciatku programu\
-
+            
             /* debug id generatoru
             IdGenerator id = new IdGenerator();
             id.new_id();
@@ -46,7 +45,7 @@ namespace ForSport
                 }
                 else
                 {
-                    MessageBox.Show("Prihlasenie sa nepodarilo");
+                    MessageBox.Show("Prihlasenie sa nepodarilo alebo nemáš založený účet");
                 }
             }
             else
@@ -55,5 +54,10 @@ namespace ForSport
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+            new register().Show();
+            this.Hide();
+        }
     }
 }

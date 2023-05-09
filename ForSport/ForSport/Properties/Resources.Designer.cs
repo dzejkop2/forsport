@@ -63,9 +63,9 @@ namespace ForSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _2889676 {
+        internal static System.Drawing.Bitmap password {
             get {
-                object obj = ResourceManager.GetObject("2889676", resourceCulture);
+                object obj = ResourceManager.GetObject("password", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,19 @@ namespace ForSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap username_1 {
+        internal static System.Drawing.Bitmap username {
             get {
-                object obj = ResourceManager.GetObject("username-1", resourceCulture);
+                object obj = ResourceManager.GetObject("username", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zavinac__1_ {
+            get {
+                object obj = ResourceManager.GetObject("zavinac (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

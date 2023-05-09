@@ -109,3 +109,5 @@ C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.e
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.pdb
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.login_menu.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.login_menu.resources
+C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.register.resources
+C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.app.resources

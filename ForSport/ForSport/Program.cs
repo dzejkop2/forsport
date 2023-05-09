@@ -15,6 +15,8 @@ namespace ForSport
         [STAThread]
         static void Main()
         {
+            Database db = new Database(); // vytvorenie objektu cez ktory sa pripaja do DB
+            db.connect(); // samotne pripojenie, vykona sa na zaciatku programu\
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new login_menu());
