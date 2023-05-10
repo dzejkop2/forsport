@@ -56,8 +56,9 @@ namespace ForSport
 
         private void label1_Click(object sender, EventArgs e)
         {
-            new register().Show();
+            register Register = new register(this);
             this.Hide();
+            Register.Show();
         }
     }
 }

@@ -64,7 +64,6 @@ C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\bin\Debug\Sy
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.csproj.AssemblyReference.cache
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.csproj.SuggestedBindingRedirects.cache
-C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.Form1.resources
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.Properties.Resources.resources
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.csproj.GenerateResource.cache
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.csproj.CoreCompileInputs.cache
@@ -111,3 +110,6 @@ C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.l
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.login_menu.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.register.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.app.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.app.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.login_menu.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.register.resources

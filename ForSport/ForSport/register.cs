@@ -12,15 +12,17 @@ namespace ForSport
 {
     public partial class register : Form
     {
-        public register()
+        private login_menu menu;
+        public register(login_menu menu)
         {
             InitializeComponent();
+            this.menu = menu;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new login_menu().Show();
+            menu.Show();
+            this.Close();
         }
     }
 }
