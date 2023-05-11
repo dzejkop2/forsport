@@ -11,20 +11,25 @@ namespace ForSport
 {
     internal class Login
     {
+
+        private string id, username, password;
+
         // properties pre login a register
-        private string id { get; }
-        private string username { get; set; }
-        private string password { get; set; }
+
+        public string Id { get => id; private set => id = value; }
+        public string Username { get => username; private set => username = value; }
+        public string Password { get => password; private set => password = value; }
+
 
         public Login(string meno, string heslo)
         {
-            this.username = meno;
-            this.password = heslo;
+            this.Username = meno;
+            this.Password = heslo;
         }
-
+        
         public bool login_verify() // metoda ktora kontroluje login informacie
         {
-            string sql = $"SELECT username, password, id FROM login_info WHERE username = \'{this.username}\'"; // sql prikaz
+            string sql = $"SELECT username, password, id FROM user_info WHERE username = \'{this.Username}\'"; // sql prikaz
             MySqlCommand command = new MySqlCommand(sql, Database.connection); // vytvorenie objektu command
             MySqlDataReader reader = command.ExecuteReader(); // vytvorenie readeru s commandom
 
@@ -41,7 +46,7 @@ namespace ForSport
                 reader.Close();
                 return false;
             }
-            else if (heslo == password) // pozrie ci sa heslo zhoduje s tym co sme zadali
+            else if (heslo == Password) // pozrie ci sa heslo zhoduje s tym co sme zadali
             {
                 reader.Close();
                 return true;

@@ -11,7 +11,8 @@ namespace ForSport
     internal class Database
     {
         private static string connstring = "SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c46ForSport;UID=c46forsport;PASSWORD=byxB@iNT47;";
-
+        //private static string connstring = "SERVER=localhost;DATABASE=forsport_test;UID=root;PASSWORD=";
+        //get => id; set => id = value; 
         public static MySqlConnection connection { get; private set; } // property pre ziskanie pirpojenia (treba pre query)
 
         MySqlConnection conn = new MySqlConnection(); // vytvorenie samotneho pripojenia

@@ -1,6 +1,6 @@
 ﻿namespace ForSport
 {
-    partial class register
+    partial class register_menu
     {
         /// <summary>
         /// Required designer variable.
@@ -155,6 +155,7 @@
             this.bt_register.TabIndex = 12;
             this.bt_register.Text = "REGISTER";
             this.bt_register.UseVisualStyleBackColor = false;
+            this.bt_register.Click += new System.EventHandler(this.bt_register_Click);
             // 
             // label1
             // 
@@ -168,7 +169,7 @@
             this.label1.Text = "Back to Login";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // register
+            // register_menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,7 +188,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "register";
+            this.Name = "register_menu";
             this.Text = "Register";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

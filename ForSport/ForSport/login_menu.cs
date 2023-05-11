@@ -16,27 +16,17 @@ namespace ForSport
 {
     public partial class login_menu : Form
     {
-
-
         public login_menu()
         {
             InitializeComponent();
             tb_password.PasswordChar = '*';
-
-
-            
-                
-         }
-            
-
+        }
 
             /* debug id generatoru
             IdGenerator id = new IdGenerator();
             id.new_id();
             MessageBox.Show(id.id);
             */
-        
-        
 
         private void button1_Click(object sender, EventArgs e) // button pre pripojenie
         {
@@ -74,7 +64,7 @@ namespace ForSport
 
         private void label1_Click(object sender, EventArgs e)
         {
-            register Register = new register(this);
+            register_menu Register = new register_menu(this);
             this.Hide();
             Register.Show();
         }
