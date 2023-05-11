@@ -16,24 +16,38 @@ namespace ForSport
 {
     public partial class login_menu : Form
     {
-        
+
 
         public login_menu()
         {
             InitializeComponent();
+            tb_password.PasswordChar = '*';
+
+
             
+                
+         }
+            
+
+
             /* debug id generatoru
             IdGenerator id = new IdGenerator();
             id.new_id();
             MessageBox.Show(id.id);
             */
-        }
+        
+        
 
         private void button1_Click(object sender, EventArgs e) // button pre pripojenie
         {
             string username = tb_username.Text; // bere string z textboxu
             string password = tb_password.Text; // bere string z textboxu
             Login login = new Login(username, password);
+
+            if (Control.IsKeyLocked(Keys.CapsLock))
+            {
+                lb_caps.Text = "Máš zapnutý Caps Lock";
+            }
             if (tb_username.Text != "" && tb_password.Text != "") // pozrie ci sme zapisali meno aj heslo
             {
                 bool valid_login = login.login_verify(); // metoda ktora vrati ci bolo uspesne prihlasenie (heslo sa zhodovalo ku menu)
