@@ -48,6 +48,10 @@ namespace ForSport
             {
                 lb_caps.Text = "Máš zapnutý Caps Lock";
             }
+            else
+            {
+                lb_caps.Text = "";
+            }
             if (tb_username.Text != "" && tb_password.Text != "") // pozrie ci sme zapisali meno aj heslo
             {
                 bool valid_login = login.login_verify(); // metoda ktora vrati ci bolo uspesne prihlasenie (heslo sa zhodovalo ku menu)
