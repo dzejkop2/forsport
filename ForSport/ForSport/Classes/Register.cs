@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using static Org.BouncyCastle.Crypto.Digests.SkeinEngine;
 
 namespace ForSport.Classes
 {
@@ -31,17 +32,24 @@ namespace ForSport.Classes
             this.Mail = mail;
         }
 
-        private bool check_username()
-        {
-            string check_name_sql = $"SELECT * FROM user_info WHERE username = '{this.Username}'";
-            MySqlCommand check_username = new MySqlCommand(check_name_sql, Database.connection); // vytvorenie objektu command
-            MySqlDataReader reader = check_username.ExecuteReader(); // vytvorenie readeru s commandom
 
-            string meno = "";
+        private string make_capital(string capital)
+        {
+            return char.ToUpper(capital[0]) + capital.Substring(1);
+        }
+
+        private bool check(string parameter)
+        {
+            
+            string check_sql = $"SELECT {parameter} FROM user_info WHERE id = '{make_capital(parameter)}'";
+            MySqlCommand command = new MySqlCommand(check_sql, Database.connection); // vytvorenie objektu command
+            MySqlDataReader reader = command.ExecuteReader(); // vytvorenie readeru s commandom
+
+            string check = "";
 
             while (reader.Read())
             {
-                meno = reader.GetString("username");
+                check = reader.GetString($"{parameter}");
             }
             if (reader.HasRows)
             {
@@ -54,61 +62,14 @@ namespace ForSport.Classes
                 return true;
             }
         }
-
-        private bool check_mail()
-        {
-            string check_mail_sql = $"SELECT * FROM user_info WHERE mail = '{this.Mail}'";
-            MySqlCommand check_mail = new MySqlCommand(check_mail_sql, Database.connection); // vytvorenie objektu command
-            MySqlDataReader reader = check_mail.ExecuteReader(); // vytvorenie readeru s commandom
-
-            string email = "";
-
-            while (reader.Read())
-            {
-                email = reader.GetString("mail");
-            }
-            if (reader.HasRows)
-            {
-                reader.Close();
-                return false;
-            }
-            else
-            {
-                reader.Close();
-                return true;
-            }
-        }
-
-        private bool check_id()
-        {
-            string check_id_sql = $"SELECT id FROM user_info WHERE id = '{this.Id}'";
-            MySqlCommand id_check = new MySqlCommand(check_id_sql, Database.connection); // vytvorenie objektu command
-            MySqlDataReader reader = id_check.ExecuteReader(); // vytvorenie readeru s commandom
-
-            string user_id = "";
-
-            while (reader.Read())
-            {
-                user_id = reader.GetString("id");
-            }
-            if (reader.HasRows)
-            {
-                reader.Close();
-                return false;
-            }
-            else
-            {
-                reader.Close();
-                return true;
-            }
-        }
-
         public void register() // metoda na registraciu pouzivatela
         {
             IdGenerator id = new IdGenerator();
-            bool unique_name = check_username();
-            bool unique_mail = check_mail();
+            bool unique_name = check("username");
+            bool unique_mail = check("mail");
             this.Id = id.new_id();
+
+
 
             if (unique_name == false)
             {
@@ -122,7 +83,7 @@ namespace ForSport.Classes
             }
             while (true)
             {
-                bool unique_id = check_id();
+                bool unique_id = check("id");
 
                 if (unique_id == false)
                 {
@@ -130,9 +91,10 @@ namespace ForSport.Classes
                 }
                 else break;
             }
-
-            MessageBox.Show("Uspesne si sa registroval"); //debug messagebox
             
+            
+            MessageBox.Show("Uspesne si sa registroval"); //debug messagebox
+
             string insert_sql = $"INSERT INTO user_info (`id`, `username`, `password`, `mail`) VALUES(\'{this.Id}\', \'{this.Username}\', \'{this.Password}\', \'{this.Mail}\')";
             MySqlCommand insert_command = new MySqlCommand(insert_sql, Database.connection);
             insert_command.ExecuteNonQuery();
