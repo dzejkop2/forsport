@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-using static Org.BouncyCastle.Crypto.Digests.SkeinEngine;
 
 namespace ForSport.Classes
 {
@@ -32,72 +31,53 @@ namespace ForSport.Classes
             this.Mail = mail;
         }
 
-
-        private string make_capital(string capital)
+        private bool check(string parameter, string property) // metoda pre checkovanie 
         {
-            return char.ToUpper(capital[0]) + capital.Substring(1);
-        }
+            string check_sql = $"SELECT * FROM user_info WHERE {parameter} = '{property}'"; // sql kde sa vyhlada v tabulke ci sa uz take data v tabulke nenachadzaju
+            MySqlCommand check = new MySqlCommand(check_sql, Database.connection); // vytvorenie objektu check
+            MySqlDataReader reader = check.ExecuteReader(); // vytvorenie readeru s commandom check
 
-        private bool check(string parameter)
-        {
-            
-            string check_sql = $"SELECT {parameter} FROM user_info WHERE id = '{make_capital(parameter)}'";
-            MySqlCommand command = new MySqlCommand(check_sql, Database.connection); // vytvorenie objektu command
-            MySqlDataReader reader = command.ExecuteReader(); // vytvorenie readeru s commandom
-
-            string check = "";
-
-            while (reader.Read())
-            {
-                check = reader.GetString($"{parameter}");
-            }
-            if (reader.HasRows)
+            if (reader.HasRows) // pozrie ci to nieco reader v tabulke nasiel
             {
                 reader.Close();
                 return false;
             }
-            else
+            else // ak nenasiel
             {
                 reader.Close();
                 return true;
             }
         }
+
         public void register() // metoda na registraciu pouzivatela
         {
             IdGenerator id = new IdGenerator();
-            bool unique_name = check("username");
-            bool unique_mail = check("mail");
             this.Id = id.new_id();
 
-
-
-            if (unique_name == false)
+            if (check("username", this.username) == false) // pozrie ci uz rovnake meno existuje
             {
                 MessageBox.Show("Toto meno uz existuje");
                 return;
             }
-            if (unique_mail == false)
+            if (check("mail", this.mail) == false) // pozrie ci bol mail pouzity
             {
                 MessageBox.Show("Na tento mail uz existuje konto");
                 return;
             }
             while (true)
             {
-                bool unique_id = check("id");
-
-                if (unique_id == false)
+                if (check("id", this.Id) == false) // pozrie ci ID je unikatne
                 {
                     this.Id = id.new_id();
                 }
                 else break;
             }
-            
-            
+
             MessageBox.Show("Uspesne si sa registroval"); //debug messagebox
 
-            string insert_sql = $"INSERT INTO user_info (`id`, `username`, `password`, `mail`) VALUES(\'{this.Id}\', \'{this.Username}\', \'{this.Password}\', \'{this.Mail}\')";
-            MySqlCommand insert_command = new MySqlCommand(insert_sql, Database.connection);
-            insert_command.ExecuteNonQuery();
+            string insert_sql = $"INSERT INTO user_info (`id`, `username`, `password`, `mail`) VALUES(\'{this.Id}\', \'{this.Username}\', \'{this.Password}\', \'{this.Mail}\')"; // sql na vpisanie dat do DB
+            MySqlCommand insert_command = new MySqlCommand(insert_sql, Database.connection); // vytvorenie komandu 
+            insert_command.ExecuteNonQuery(); // zapis do DB
         }
     }
 }

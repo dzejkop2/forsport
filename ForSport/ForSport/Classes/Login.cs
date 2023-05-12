@@ -36,17 +36,17 @@ namespace ForSport
             string id = "";
             string heslo = "";
 
-            while (reader.Read())
-            {
-                id = reader.GetString("id");
-                heslo = reader.GetString("password");
-            }
             if (!reader.HasRows) // pozrie ci reader nevratil prazdnu tabulku
             {
                 reader.Close();
                 return false;
             }
-            else if (heslo == Password) // pozrie ci sa heslo zhoduje s tym co sme zadali
+            while (reader.Read())
+            {
+                id = reader.GetString("id");
+                heslo = reader.GetString("password");
+            }
+            if (heslo == Password) // pozrie ci sa heslo zhoduje s tym co sme zadali
             {
                 reader.Close();
                 return true;
