@@ -144,6 +144,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\RobotoSerif.ttf" />
     <None Include="Resources\tipsport-logo-vector.png" />
   </ItemGroup>
   <ItemGroup>
