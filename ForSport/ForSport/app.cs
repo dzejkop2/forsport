@@ -17,6 +17,9 @@ namespace ForSport
         {
             InitializeComponent();
             bt_kurzy.FlatAppearance.BorderSize = 0;
+            bt_forum.FlatAppearance.BorderSize = 0;
+            bt_live.FlatAppearance.BorderSize = 0;
+            bt_vysledky.FlatAppearance.BorderSize = 0;
         }
 
         private void app_load(object sender, EventArgs e)
