@@ -31,5 +31,44 @@ namespace ForSport
                 c.Font = new Font(pfc.Families[0], 15, FontStyle.Regular);
             }
         }
+
+        public void loadform(object Form)
+        {
+            Form f = Form as Form;
+            if (this.mainpanel.Controls.Count > 0)
+            {
+                this.mainpanel.Controls.RemoveAt(0);
+            }
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            this.mainpanel.Controls.Add(f);
+            this.mainpanel.Tag = f;
+            f.Show();
+        }
+
+        private void bt_kurzy_Click(object sender, EventArgs e)
+        {
+            loadform(new kurzy());
+        }
+
+        private void bt_live_Click(object sender, EventArgs e)
+        {
+            loadform(new live());
+        }
+
+        private void bt_forum_Click(object sender, EventArgs e)
+        {
+            loadform(new forum());
+        }
+
+        private void bt_vysledky_Click(object sender, EventArgs e)
+        {
+            loadform(new vysledky());
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e) 
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -33,7 +33,6 @@ namespace ForSport
             MySqlCommand command = new MySqlCommand(sql, Database.connection); // vytvorenie objektu command
             MySqlDataReader reader = command.ExecuteReader(); // vytvorenie readeru s commandom
 
-            string id = "";
             string heslo = "";
 
             if (!reader.HasRows) // pozrie ci reader nevratil prazdnu tabulku
@@ -43,7 +42,7 @@ namespace ForSport
             }
             while (reader.Read())
             {
-                id = reader.GetString("id");
+                this.Id = reader.GetString("id");
                 heslo = reader.GetString("password");
             }
             if (heslo == Password) // pozrie ci sa heslo zhoduje s tym co sme zadali

@@ -115,3 +115,7 @@ C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\Fo
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.app.resources
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.register_menu.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.register_menu.resources
+C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.forum.resources
+C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.kurzy.resources
+C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.live.resources
+C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.vysledky.resources
