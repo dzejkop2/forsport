@@ -42,7 +42,7 @@ namespace ForSport
             if (!reader.HasRows) // pozrie ci reader nevratil prazdnu tabulku
             {
                 reader.Close();
-                check = false;
+                return false;
             }
             while (reader.Read())
             {

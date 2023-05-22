@@ -27,6 +27,9 @@ namespace ForSport
         public login_menu()
         {
             InitializeComponent();
+            bt_exit.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.BorderSize = 0;
+            bt_minimize.FlatAppearance.BorderSize = 0;
             tb_password.PasswordChar = '*';
         }
 

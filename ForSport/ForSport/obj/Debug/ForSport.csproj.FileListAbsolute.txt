@@ -120,3 +120,8 @@ C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.k
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.live.resources
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.vysledky.resources
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.account.resources
+C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.account.resources
+C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.forum.resources
+C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.kurzy.resources
+C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.live.resources
+C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.vysledky.resources

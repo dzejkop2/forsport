@@ -26,7 +26,11 @@ namespace ForSport
 
         public register_menu(login_menu menu)
         {
+            
             InitializeComponent();
+            bt_register.FlatAppearance.BorderSize = 0;
+            bt_exit.FlatAppearance.BorderSize = 0;
+            bt_minimize.FlatAppearance.BorderSize = 0;
             this.menu = menu;
         }
 

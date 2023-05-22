@@ -204,5 +204,8 @@
   <ItemGroup>
     <None Include="Resources\logo-SK.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cAEh.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

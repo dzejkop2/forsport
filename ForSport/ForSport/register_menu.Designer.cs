@@ -181,28 +181,32 @@
             this.toppanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.toppanel.Location = new System.Drawing.Point(0, 0);
             this.toppanel.Name = "toppanel";
-            this.toppanel.Size = new System.Drawing.Size(317, 35);
+            this.toppanel.Size = new System.Drawing.Size(317, 31);
             this.toppanel.TabIndex = 14;
             this.toppanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.toppanel_MouseMove);
             // 
             // bt_minimize
             // 
-            this.bt_minimize.Location = new System.Drawing.Point(235, 3);
+            this.bt_minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.bt_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_minimize.Location = new System.Drawing.Point(246, 0);
             this.bt_minimize.Name = "bt_minimize";
-            this.bt_minimize.Size = new System.Drawing.Size(40, 23);
+            this.bt_minimize.Size = new System.Drawing.Size(31, 31);
             this.bt_minimize.TabIndex = 1;
             this.bt_minimize.Text = "-";
-            this.bt_minimize.UseVisualStyleBackColor = true;
+            this.bt_minimize.UseVisualStyleBackColor = false;
             this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
             // 
             // bt_exit
             // 
-            this.bt_exit.Location = new System.Drawing.Point(281, 3);
+            this.bt_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.bt_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_exit.Location = new System.Drawing.Point(283, 1);
             this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Size = new System.Drawing.Size(33, 23);
+            this.bt_exit.Size = new System.Drawing.Size(31, 31);
             this.bt_exit.TabIndex = 0;
             this.bt_exit.Text = "X";
-            this.bt_exit.UseVisualStyleBackColor = true;
+            this.bt_exit.UseVisualStyleBackColor = false;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // register_menu

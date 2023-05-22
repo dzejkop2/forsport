@@ -33,7 +33,7 @@ namespace ForSport
 
         private void refresh_balance()
         {
-            lb_balance.Text = $"Balance: {this.Balance}";
+            lb_balance.Text = $"Balance: {this.Balance}" + "€";
         }
 
         public app(string username, string password, string id, string mail, float balance)
@@ -43,6 +43,9 @@ namespace ForSport
             bt_forum.FlatAppearance.BorderSize = 0;
             bt_live.FlatAppearance.BorderSize = 0;
             bt_vysledky.FlatAppearance.BorderSize = 0;
+            bt_admin.FlatAppearance.BorderSize = 0;
+            btn_exit.FlatAppearance.BorderSize = 0;
+            bt_minimize.FlatAppearance.BorderSize = 0;  
             this.Username = username;
             this.Password = password;
             this.Id = id;

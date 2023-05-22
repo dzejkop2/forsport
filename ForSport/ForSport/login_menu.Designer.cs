@@ -67,9 +67,8 @@
             this.tb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tb_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
             this.tb_username.Location = new System.Drawing.Point(82, 150);
-            this.tb_username.Multiline = true;
             this.tb_username.Name = "tb_username";
-            this.tb_username.Size = new System.Drawing.Size(185, 24);
+            this.tb_username.Size = new System.Drawing.Size(185, 17);
             this.tb_username.TabIndex = 5;
             // 
             // tb_password
@@ -77,10 +76,9 @@
             this.tb_password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tb_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(117)))), ((int)(((byte)(214)))));
-            this.tb_password.Location = new System.Drawing.Point(82, 210);
-            this.tb_password.Multiline = true;
+            this.tb_password.Location = new System.Drawing.Point(82, 207);
             this.tb_password.Name = "tb_password";
-            this.tb_password.Size = new System.Drawing.Size(185, 24);
+            this.tb_password.Size = new System.Drawing.Size(185, 17);
             this.tb_password.TabIndex = 6;
             // 
             // panel1
@@ -159,28 +157,32 @@
             this.toppanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.toppanel.Location = new System.Drawing.Point(0, 0);
             this.toppanel.Name = "toppanel";
-            this.toppanel.Size = new System.Drawing.Size(317, 35);
+            this.toppanel.Size = new System.Drawing.Size(317, 30);
             this.toppanel.TabIndex = 15;
             this.toppanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.toppanel_MouseMove);
             // 
             // bt_minimize
             // 
-            this.bt_minimize.Location = new System.Drawing.Point(228, 9);
+            this.bt_minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.bt_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_minimize.Location = new System.Drawing.Point(248, 0);
             this.bt_minimize.Name = "bt_minimize";
-            this.bt_minimize.Size = new System.Drawing.Size(39, 23);
+            this.bt_minimize.Size = new System.Drawing.Size(30, 30);
             this.bt_minimize.TabIndex = 1;
             this.bt_minimize.Text = "-";
-            this.bt_minimize.UseVisualStyleBackColor = true;
+            this.bt_minimize.UseVisualStyleBackColor = false;
             this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
             // 
             // bt_exit
             // 
-            this.bt_exit.Location = new System.Drawing.Point(273, 9);
+            this.bt_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.bt_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_exit.Location = new System.Drawing.Point(284, 0);
             this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Size = new System.Drawing.Size(32, 23);
+            this.bt_exit.Size = new System.Drawing.Size(30, 30);
             this.bt_exit.TabIndex = 0;
             this.bt_exit.Text = "X";
-            this.bt_exit.UseVisualStyleBackColor = true;
+            this.bt_exit.UseVisualStyleBackColor = false;
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // login_menu

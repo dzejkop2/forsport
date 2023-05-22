@@ -33,19 +33,19 @@
             this.bt_minimize = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lb_balance = new System.Windows.Forms.Label();
+            this.lb_account = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_vysledky = new System.Windows.Forms.Button();
             this.bt_forum = new System.Windows.Forms.Button();
             this.bt_live = new System.Windows.Forms.Button();
             this.bt_kurzy = new System.Windows.Forms.Button();
-            this.lb_account = new System.Windows.Forms.Label();
-            this.lb_balance = new System.Windows.Forms.Label();
             this.bt_admin = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toppanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainpanel
@@ -58,7 +58,7 @@
             // 
             // toppanel
             // 
-            this.toppanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.toppanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
             this.toppanel.Controls.Add(this.bt_minimize);
             this.toppanel.Controls.Add(this.btn_exit);
             this.toppanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -70,22 +70,32 @@
             // 
             // bt_minimize
             // 
-            this.bt_minimize.Location = new System.Drawing.Point(1094, 6);
+            this.bt_minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.bt_minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_minimize.ForeColor = System.Drawing.Color.Black;
+            this.bt_minimize.Location = new System.Drawing.Point(1081, 0);
             this.bt_minimize.Name = "bt_minimize";
-            this.bt_minimize.Size = new System.Drawing.Size(25, 23);
+            this.bt_minimize.Size = new System.Drawing.Size(35, 35);
             this.bt_minimize.TabIndex = 4;
             this.bt_minimize.Text = "-";
-            this.bt_minimize.UseVisualStyleBackColor = true;
+            this.bt_minimize.UseVisualStyleBackColor = false;
             this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(1125, 6);
+            this.btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_exit.ForeColor = System.Drawing.Color.Black;
+            this.btn_exit.Location = new System.Drawing.Point(1122, 0);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(29, 23);
+            this.btn_exit.Size = new System.Drawing.Size(35, 35);
             this.btn_exit.TabIndex = 3;
             this.btn_exit.Text = "X";
-            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.UseVisualStyleBackColor = false;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // panel1
@@ -99,6 +109,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1157, 72);
             this.panel1.TabIndex = 1;
+            // 
+            // lb_balance
+            // 
+            this.lb_balance.AutoSize = true;
+            this.lb_balance.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_balance.ForeColor = System.Drawing.Color.White;
+            this.lb_balance.Location = new System.Drawing.Point(882, 38);
+            this.lb_balance.Name = "lb_balance";
+            this.lb_balance.Size = new System.Drawing.Size(60, 21);
+            this.lb_balance.TabIndex = 2;
+            this.lb_balance.Text = "label1";
+            // 
+            // lb_account
+            // 
+            this.lb_account.AutoSize = true;
+            this.lb_account.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_account.ForeColor = System.Drawing.Color.White;
+            this.lb_account.Location = new System.Drawing.Point(882, 14);
+            this.lb_account.Name = "lb_account";
+            this.lb_account.Size = new System.Drawing.Size(60, 21);
+            this.lb_account.TabIndex = 1;
+            this.lb_account.Text = "label1";
+            this.lb_account.Click += new System.EventHandler(this.lb_account_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ForSport.Properties.Resources.logo_SK;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(139, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -118,8 +161,9 @@
             // bt_vysledky
             // 
             this.bt_vysledky.BackColor = System.Drawing.SystemColors.GrayText;
+            this.bt_vysledky.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_vysledky.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_vysledky.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_vysledky.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_vysledky.ForeColor = System.Drawing.Color.White;
             this.bt_vysledky.Location = new System.Drawing.Point(380, 4);
             this.bt_vysledky.Name = "bt_vysledky";
@@ -132,8 +176,9 @@
             // bt_forum
             // 
             this.bt_forum.BackColor = System.Drawing.SystemColors.GrayText;
+            this.bt_forum.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_forum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_forum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_forum.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_forum.ForeColor = System.Drawing.Color.White;
             this.bt_forum.Location = new System.Drawing.Point(260, 3);
             this.bt_forum.Name = "bt_forum";
@@ -146,8 +191,9 @@
             // bt_live
             // 
             this.bt_live.BackColor = System.Drawing.SystemColors.GrayText;
+            this.bt_live.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_live.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_live.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_live.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_live.ForeColor = System.Drawing.Color.White;
             this.bt_live.Location = new System.Drawing.Point(137, 3);
             this.bt_live.Name = "bt_live";
@@ -160,8 +206,9 @@
             // bt_kurzy
             // 
             this.bt_kurzy.BackColor = System.Drawing.SystemColors.GrayText;
+            this.bt_kurzy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_kurzy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_kurzy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_kurzy.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_kurzy.ForeColor = System.Drawing.Color.White;
             this.bt_kurzy.Location = new System.Drawing.Point(14, 3);
             this.bt_kurzy.Name = "bt_kurzy";
@@ -171,46 +218,19 @@
             this.bt_kurzy.UseVisualStyleBackColor = false;
             this.bt_kurzy.Click += new System.EventHandler(this.bt_kurzy_Click);
             // 
-            // lb_account
-            // 
-            this.lb_account.AutoSize = true;
-            this.lb_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lb_account.ForeColor = System.Drawing.Color.White;
-            this.lb_account.Location = new System.Drawing.Point(1014, 14);
-            this.lb_account.Name = "lb_account";
-            this.lb_account.Size = new System.Drawing.Size(35, 13);
-            this.lb_account.TabIndex = 1;
-            this.lb_account.Text = "label1";
-            this.lb_account.Click += new System.EventHandler(this.lb_account_Click);
-            // 
-            // lb_balance
-            // 
-            this.lb_balance.AutoSize = true;
-            this.lb_balance.ForeColor = System.Drawing.Color.White;
-            this.lb_balance.Location = new System.Drawing.Point(1014, 38);
-            this.lb_balance.Name = "lb_balance";
-            this.lb_balance.Size = new System.Drawing.Size(35, 13);
-            this.lb_balance.TabIndex = 2;
-            this.lb_balance.Text = "label1";
-            // 
             // bt_admin
             // 
-            this.bt_admin.Location = new System.Drawing.Point(509, 10);
+            this.bt_admin.BackColor = System.Drawing.SystemColors.GrayText;
+            this.bt_admin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_admin.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_admin.ForeColor = System.Drawing.Color.White;
+            this.bt_admin.Location = new System.Drawing.Point(501, 4);
             this.bt_admin.Name = "bt_admin";
-            this.bt_admin.Size = new System.Drawing.Size(75, 23);
+            this.bt_admin.Size = new System.Drawing.Size(100, 33);
             this.bt_admin.TabIndex = 1;
             this.bt_admin.Text = "Účty";
-            this.bt_admin.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ForSport.Properties.Resources.logo_SK;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.bt_admin.UseVisualStyleBackColor = false;
             // 
             // app
             // 
@@ -230,8 +250,8 @@
             this.toppanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

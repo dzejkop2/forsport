@@ -15,6 +15,7 @@ namespace ForSport
         public forum()
         {
             InitializeComponent();
+            bt_zverejni.FlatAppearance.BorderSize = 0;
         }
     }
 }
