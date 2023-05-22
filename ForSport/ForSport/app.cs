@@ -14,6 +14,9 @@ namespace ForSport
 {
     public partial class app : Form
     {
+        string id, username, password, mail;
+        float balance;
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
@@ -22,13 +25,36 @@ namespace ForSport
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        public app()
+        public string Id { get => id; set => id = value; }
+        public string Username { get => username; set => username = value; }
+        public string Password { get => password; set => password = value; }
+        public string Mail { get => mail; set => mail = value; }
+        public float Balance { get => balance; set => balance = value; }
+
+        private void refresh_balance()
+        {
+            lb_balance.Text = $"Balance: {this.Balance}";
+        }
+
+        public app(string username, string password, string id, string mail, float balance)
         {
             InitializeComponent();
             bt_kurzy.FlatAppearance.BorderSize = 0;
             bt_forum.FlatAppearance.BorderSize = 0;
             bt_live.FlatAppearance.BorderSize = 0;
             bt_vysledky.FlatAppearance.BorderSize = 0;
+            this.Username = username;
+            this.Password = password;
+            this.Id = id;
+            this.Mail = mail;
+            this.Balance = balance;
+            lb_account.Text = $"Prihlaseny ako: {this.Username}";
+            refresh_balance();
+
+            if (id != "1111111111")
+            {
+                bt_admin.Hide();
+            }
         }
 
         private void app_load(object sender, EventArgs e)
@@ -73,6 +99,11 @@ namespace ForSport
         private void bt_vysledky_Click(object sender, EventArgs e)
         {
             loadform(new vysledky());
+        }
+
+        private void lb_account_Click(object sender, EventArgs e)
+        {
+            loadform(new account());
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

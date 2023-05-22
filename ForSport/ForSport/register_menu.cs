@@ -23,6 +23,7 @@ namespace ForSport
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
+
         public register_menu(login_menu menu)
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace ForSport
         private void label1_Click(object sender, EventArgs e)
         {
             menu.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void bt_register_Click(object sender, EventArgs e)
@@ -44,7 +45,12 @@ namespace ForSport
             Register register = new Register(username, password, mail);
             if (tb_username.Text != "" && tb_password.Text != "" && tb_email.Text != "") // pozrie ci sme zapisali meno,heslo a mail
             {
-                register.register();
+                bool valid_register = register.register();
+                if (valid_register == true)
+                {
+                    new app(register.Username, register.Password, register.Id, register.Mail, register.Balance).Show();
+                    this.Close();
+                }
             }
             else
             {

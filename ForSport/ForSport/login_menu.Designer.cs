@@ -39,8 +39,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_caps = new System.Windows.Forms.Label();
             this.toppanel = new System.Windows.Forms.Panel();
-            this.bt_exit = new System.Windows.Forms.Button();
             this.bt_minimize = new System.Windows.Forms.Button();
+            this.bt_exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -163,16 +163,6 @@
             this.toppanel.TabIndex = 15;
             this.toppanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.toppanel_MouseMove);
             // 
-            // bt_exit
-            // 
-            this.bt_exit.Location = new System.Drawing.Point(273, 9);
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Size = new System.Drawing.Size(32, 23);
-            this.bt_exit.TabIndex = 0;
-            this.bt_exit.Text = "X";
-            this.bt_exit.UseVisualStyleBackColor = true;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
-            // 
             // bt_minimize
             // 
             this.bt_minimize.Location = new System.Drawing.Point(228, 9);
@@ -182,6 +172,16 @@
             this.bt_minimize.Text = "-";
             this.bt_minimize.UseVisualStyleBackColor = true;
             this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
+            // 
+            // bt_exit
+            // 
+            this.bt_exit.Location = new System.Drawing.Point(273, 9);
+            this.bt_exit.Name = "bt_exit";
+            this.bt_exit.Size = new System.Drawing.Size(32, 23);
+            this.bt_exit.TabIndex = 0;
+            this.bt_exit.Text = "X";
+            this.bt_exit.UseVisualStyleBackColor = true;
+            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // login_menu
             // 
@@ -202,6 +202,7 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login_menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

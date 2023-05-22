@@ -30,27 +30,30 @@
         {
             this.mainpanel = new System.Windows.Forms.Panel();
             this.toppanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.bt_minimize = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_vysledky = new System.Windows.Forms.Button();
             this.bt_forum = new System.Windows.Forms.Button();
             this.bt_live = new System.Windows.Forms.Button();
             this.bt_kurzy = new System.Windows.Forms.Button();
-            this.bt_minimize = new System.Windows.Forms.Button();
+            this.lb_account = new System.Windows.Forms.Label();
+            this.lb_balance = new System.Windows.Forms.Label();
+            this.bt_admin = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toppanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // mainpanel
             // 
             this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainpanel.Location = new System.Drawing.Point(0, 0);
+            this.mainpanel.Location = new System.Drawing.Point(0, 147);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(1157, 588);
+            this.mainpanel.Size = new System.Drawing.Size(1157, 600);
             this.mainpanel.TabIndex = 3;
             // 
             // toppanel
@@ -65,15 +68,15 @@
             this.toppanel.TabIndex = 0;
             this.toppanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.toppanel_MouseMove);
             // 
-            // panel1
+            // bt_minimize
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 35);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1157, 72);
-            this.panel1.TabIndex = 1;
+            this.bt_minimize.Location = new System.Drawing.Point(1094, 6);
+            this.bt_minimize.Name = "bt_minimize";
+            this.bt_minimize.Size = new System.Drawing.Size(25, 23);
+            this.bt_minimize.TabIndex = 4;
+            this.bt_minimize.Text = "-";
+            this.bt_minimize.UseVisualStyleBackColor = true;
+            this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
             // 
             // btn_exit
             // 
@@ -85,19 +88,22 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.Image = global::ForSport.Properties.Resources.logo_SK;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.panel1.Controls.Add(this.lb_balance);
+            this.panel1.Controls.Add(this.lb_account);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1157, 72);
+            this.panel1.TabIndex = 1;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.Controls.Add(this.bt_admin);
             this.panel2.Controls.Add(this.bt_vysledky);
             this.panel2.Controls.Add(this.bt_forum);
             this.panel2.Controls.Add(this.bt_live);
@@ -165,26 +171,57 @@
             this.bt_kurzy.UseVisualStyleBackColor = false;
             this.bt_kurzy.Click += new System.EventHandler(this.bt_kurzy_Click);
             // 
-            // bt_minimize
+            // lb_account
             // 
-            this.bt_minimize.Location = new System.Drawing.Point(1094, 6);
-            this.bt_minimize.Name = "bt_minimize";
-            this.bt_minimize.Size = new System.Drawing.Size(25, 23);
-            this.bt_minimize.TabIndex = 4;
-            this.bt_minimize.Text = "-";
-            this.bt_minimize.UseVisualStyleBackColor = true;
-            this.bt_minimize.Click += new System.EventHandler(this.bt_minimize_Click);
+            this.lb_account.AutoSize = true;
+            this.lb_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_account.ForeColor = System.Drawing.Color.White;
+            this.lb_account.Location = new System.Drawing.Point(1014, 14);
+            this.lb_account.Name = "lb_account";
+            this.lb_account.Size = new System.Drawing.Size(35, 13);
+            this.lb_account.TabIndex = 1;
+            this.lb_account.Text = "label1";
+            this.lb_account.Click += new System.EventHandler(this.lb_account_Click);
+            // 
+            // lb_balance
+            // 
+            this.lb_balance.AutoSize = true;
+            this.lb_balance.ForeColor = System.Drawing.Color.White;
+            this.lb_balance.Location = new System.Drawing.Point(1014, 38);
+            this.lb_balance.Name = "lb_balance";
+            this.lb_balance.Size = new System.Drawing.Size(35, 13);
+            this.lb_balance.TabIndex = 2;
+            this.lb_balance.Text = "label1";
+            // 
+            // bt_admin
+            // 
+            this.bt_admin.Location = new System.Drawing.Point(509, 10);
+            this.bt_admin.Name = "bt_admin";
+            this.bt_admin.Size = new System.Drawing.Size(75, 23);
+            this.bt_admin.TabIndex = 1;
+            this.bt_admin.Text = "Účty";
+            this.bt_admin.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ForSport.Properties.Resources.logo_SK;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1157, 588);
+            this.ClientSize = new System.Drawing.Size(1157, 747);
+            this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toppanel);
-            this.Controls.Add(this.mainpanel);
             this.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "app";
@@ -192,8 +229,9 @@
             this.Text = "ForSport";
             this.toppanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -210,5 +248,8 @@
         private System.Windows.Forms.Button bt_live;
         private System.Windows.Forms.Button bt_kurzy;
         private System.Windows.Forms.Button bt_minimize;
+        private System.Windows.Forms.Label lb_balance;
+        private System.Windows.Forms.Label lb_account;
+        private System.Windows.Forms.Button bt_admin;
     }
 }

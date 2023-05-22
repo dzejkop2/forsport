@@ -119,3 +119,4 @@ C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.f
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.kurzy.resources
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.live.resources
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.vysledky.resources
+C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.account.resources

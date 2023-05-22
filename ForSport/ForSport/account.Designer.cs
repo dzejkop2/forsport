@@ -1,6 +1,6 @@
 ﻿namespace ForSport
 {
-    partial class forum
+    partial class account
     {
         /// <summary>
         /// Required designer variable.
@@ -33,24 +33,24 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(281, 195);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(522, 225);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 141);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "TOTO BUDU LIVE STAVKY (možno tu nechame len label ze work in progress loliky lol)" +
-    "";
+            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ACCOUNT INFO";
             // 
-            // forum
+            // account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1157, 600);
+            this.ClientSize = new System.Drawing.Size(1147, 600);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "forum";
-            this.Text = "forum";
+            this.Name = "account";
+            this.Text = "account";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
