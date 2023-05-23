@@ -98,6 +98,7 @@
     <Compile Include="app.Designer.cs">
       <DependentUpon>app.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Comments.cs" />
     <Compile Include="Classes\Database.cs" />
     <Compile Include="Classes\IdGenerator.cs" />
     <Compile Include="Classes\Login.cs" />
