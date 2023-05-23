@@ -96,7 +96,7 @@ namespace ForSport
 
         private void bt_forum_Click(object sender, EventArgs e)
         {
-            loadform(new forum());
+            loadform(new forum(this.Username));
         }
 
         private void bt_vysledky_Click(object sender, EventArgs e)

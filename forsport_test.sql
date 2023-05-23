@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2023 at 03:36 PM
+-- Generation Time: May 23, 2023 at 06:06 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -24,6 +24,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `forum`
+--
+
+CREATE TABLE `forum` (
+  `username` varchar(50) NOT NULL,
+  `comment` varchar(200) NOT NULL,
+  `date` varchar(12) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `forum`
+--
+
+INSERT INTO `forum` (`username`, `comment`, `date`) VALUES
+('admin', 'Pekne forum či jako?', '23. 5. 2023 ');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user_balance`
 --
 
@@ -37,8 +56,7 @@ CREATE TABLE `user_balance` (
 --
 
 INSERT INTO `user_balance` (`id`, `balance`) VALUES
-('1111111111', 0),
-('BOwI1hxuXn', 20.2);
+('1111111111', 0);
 
 -- --------------------------------------------------------
 
@@ -58,9 +76,7 @@ CREATE TABLE `user_info` (
 --
 
 INSERT INTO `user_info` (`id`, `username`, `password`, `mail`) VALUES
-('1111111111', 'admin', 'admin123', '*'),
-('gIbWftBplS', 'robino123', 'robino', 'robik@gmail.com'),
-('BOwI1hxuXn', 'robino456', 'robino', 'robino123@gmail.com');
+('1111111111', 'admin', 'admin123', '*');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -37,11 +37,11 @@
             this.lb_account = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bt_admin = new System.Windows.Forms.Button();
             this.bt_vysledky = new System.Windows.Forms.Button();
             this.bt_forum = new System.Windows.Forms.Button();
             this.bt_live = new System.Windows.Forms.Button();
             this.bt_kurzy = new System.Windows.Forms.Button();
-            this.bt_admin = new System.Windows.Forms.Button();
             this.toppanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -113,22 +113,22 @@
             // lb_balance
             // 
             this.lb_balance.AutoSize = true;
-            this.lb_balance.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lb_balance.ForeColor = System.Drawing.Color.White;
             this.lb_balance.Location = new System.Drawing.Point(882, 38);
             this.lb_balance.Name = "lb_balance";
-            this.lb_balance.Size = new System.Drawing.Size(60, 21);
+            this.lb_balance.Size = new System.Drawing.Size(57, 20);
             this.lb_balance.TabIndex = 2;
             this.lb_balance.Text = "label1";
             // 
             // lb_account
             // 
             this.lb_account.AutoSize = true;
-            this.lb_account.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lb_account.ForeColor = System.Drawing.Color.White;
             this.lb_account.Location = new System.Drawing.Point(882, 14);
             this.lb_account.Name = "lb_account";
-            this.lb_account.Size = new System.Drawing.Size(60, 21);
+            this.lb_account.Size = new System.Drawing.Size(57, 20);
             this.lb_account.TabIndex = 1;
             this.lb_account.Text = "label1";
             this.lb_account.Click += new System.EventHandler(this.lb_account_Click);
@@ -158,12 +158,26 @@
             this.panel2.Size = new System.Drawing.Size(1157, 40);
             this.panel2.TabIndex = 2;
             // 
+            // bt_admin
+            // 
+            this.bt_admin.BackColor = System.Drawing.SystemColors.GrayText;
+            this.bt_admin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_admin.ForeColor = System.Drawing.Color.White;
+            this.bt_admin.Location = new System.Drawing.Point(501, 4);
+            this.bt_admin.Name = "bt_admin";
+            this.bt_admin.Size = new System.Drawing.Size(100, 33);
+            this.bt_admin.TabIndex = 1;
+            this.bt_admin.Text = "Účty";
+            this.bt_admin.UseVisualStyleBackColor = false;
+            // 
             // bt_vysledky
             // 
             this.bt_vysledky.BackColor = System.Drawing.SystemColors.GrayText;
             this.bt_vysledky.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_vysledky.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_vysledky.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_vysledky.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_vysledky.ForeColor = System.Drawing.Color.White;
             this.bt_vysledky.Location = new System.Drawing.Point(380, 4);
             this.bt_vysledky.Name = "bt_vysledky";
@@ -178,7 +192,7 @@
             this.bt_forum.BackColor = System.Drawing.SystemColors.GrayText;
             this.bt_forum.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_forum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_forum.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_forum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_forum.ForeColor = System.Drawing.Color.White;
             this.bt_forum.Location = new System.Drawing.Point(260, 3);
             this.bt_forum.Name = "bt_forum";
@@ -193,7 +207,7 @@
             this.bt_live.BackColor = System.Drawing.SystemColors.GrayText;
             this.bt_live.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_live.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_live.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_live.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_live.ForeColor = System.Drawing.Color.White;
             this.bt_live.Location = new System.Drawing.Point(137, 3);
             this.bt_live.Name = "bt_live";
@@ -208,7 +222,7 @@
             this.bt_kurzy.BackColor = System.Drawing.SystemColors.GrayText;
             this.bt_kurzy.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_kurzy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_kurzy.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_kurzy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_kurzy.ForeColor = System.Drawing.Color.White;
             this.bt_kurzy.Location = new System.Drawing.Point(14, 3);
             this.bt_kurzy.Name = "bt_kurzy";
@@ -217,20 +231,6 @@
             this.bt_kurzy.Text = "Kurzy";
             this.bt_kurzy.UseVisualStyleBackColor = false;
             this.bt_kurzy.Click += new System.EventHandler(this.bt_kurzy_Click);
-            // 
-            // bt_admin
-            // 
-            this.bt_admin.BackColor = System.Drawing.SystemColors.GrayText;
-            this.bt_admin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_admin.Font = new System.Drawing.Font("Roboto Serif 20pt 20pt", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.bt_admin.ForeColor = System.Drawing.Color.White;
-            this.bt_admin.Location = new System.Drawing.Point(501, 4);
-            this.bt_admin.Name = "bt_admin";
-            this.bt_admin.Size = new System.Drawing.Size(100, 33);
-            this.bt_admin.TabIndex = 1;
-            this.bt_admin.Text = "Účty";
-            this.bt_admin.UseVisualStyleBackColor = false;
             // 
             // app
             // 

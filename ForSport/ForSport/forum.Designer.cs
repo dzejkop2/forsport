@@ -31,12 +31,6 @@
             this.tb_sprava = new System.Windows.Forms.TextBox();
             this.bt_zverejni = new System.Windows.Forms.Button();
             this.panel_main = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lb_cas_odpoved = new System.Windows.Forms.Label();
-            this.lb_post_odpoved = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel_main.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_sprava
@@ -59,59 +53,16 @@
             this.bt_zverejni.TabIndex = 17;
             this.bt_zverejni.Text = "Zverejni";
             this.bt_zverejni.UseVisualStyleBackColor = false;
+            this.bt_zverejni.Click += new System.EventHandler(this.bt_zverejni_Click);
             // 
             // panel_main
             // 
-            this.panel_main.AutoSize = true;
+            this.panel_main.AutoScroll = true;
             this.panel_main.BackColor = System.Drawing.Color.White;
-            this.panel_main.Controls.Add(this.panel2);
             this.panel_main.Location = new System.Drawing.Point(23, 129);
             this.panel_main.Name = "panel_main";
             this.panel_main.Size = new System.Drawing.Size(1105, 444);
             this.panel_main.TabIndex = 1000;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(248)))), ((int)(((byte)(253)))));
-            this.panel2.Controls.Add(this.lb_cas_odpoved);
-            this.panel2.Controls.Add(this.lb_post_odpoved);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(684, 339);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(407, 90);
-            this.panel2.TabIndex = 1;
-            // 
-            // lb_cas_odpoved
-            // 
-            this.lb_cas_odpoved.AutoSize = true;
-            this.lb_cas_odpoved.ForeColor = System.Drawing.Color.Black;
-            this.lb_cas_odpoved.Location = new System.Drawing.Point(318, 4);
-            this.lb_cas_odpoved.Name = "lb_cas_odpoved";
-            this.lb_cas_odpoved.Size = new System.Drawing.Size(86, 13);
-            this.lb_cas_odpoved.TabIndex = 3;
-            this.lb_cas_odpoved.Text = "lb_cas_odpoved";
-            // 
-            // lb_post_odpoved
-            // 
-            this.lb_post_odpoved.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(233)))), ((int)(((byte)(250)))));
-            this.lb_post_odpoved.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_post_odpoved.ForeColor = System.Drawing.Color.Black;
-            this.lb_post_odpoved.Location = new System.Drawing.Point(5, 33);
-            this.lb_post_odpoved.Name = "lb_post_odpoved";
-            this.lb_post_odpoved.Size = new System.Drawing.Size(388, 42);
-            this.lb_post_odpoved.TabIndex = 2;
-            this.lb_post_odpoved.Text = "lb_post_odpoved, hadam kazdy pochopil";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(124)))), ((int)(((byte)(196)))));
-            this.label1.Location = new System.Drawing.Point(4, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "lb_nick_odpoved";
             // 
             // forum
             // 
@@ -124,9 +75,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "forum";
             this.Text = "forum";
-            this.panel_main.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,9 +84,5 @@
         private System.Windows.Forms.TextBox tb_sprava;
         private System.Windows.Forms.Button bt_zverejni;
         private System.Windows.Forms.Panel panel_main;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lb_cas_odpoved;
-        private System.Windows.Forms.Label lb_post_odpoved;
-        private System.Windows.Forms.Label label1;
     }
 }
