@@ -68,7 +68,7 @@ namespace ForSport
             {
                 reader_balance.Close();
                 MessageBox.Show("NEMAS V DATABAZE DOBRE LOOOOOOOL");
-                check = false;
+                return false;
             }
             while (reader_balance.Read())
             {
