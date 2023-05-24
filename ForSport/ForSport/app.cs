@@ -14,6 +14,7 @@ namespace ForSport
 {
     public partial class app : Form
     {
+        private login_menu menu;
         string id, username, password, mail;
         float balance;
 
@@ -36,8 +37,9 @@ namespace ForSport
             lb_balance.Text = $"Balance: {this.Balance}" + "€";
         }
 
-        public app(string username, string password, string id, string mail, float balance)
+        public app(string username, string password, string id, string mail, float balance, login_menu menu)
         {
+            
             InitializeComponent();
             bt_kurzy.FlatAppearance.BorderSize = 0;
             bt_forum.FlatAppearance.BorderSize = 0;
@@ -51,6 +53,7 @@ namespace ForSport
             this.Id = id;
             this.Mail = mail;
             this.Balance = balance;
+            this.menu = menu;
             lb_account.Text = $"Prihlaseny ako: {this.Username}";
             refresh_balance();
 
@@ -106,7 +109,7 @@ namespace ForSport
 
         private void lb_account_Click(object sender, EventArgs e)
         {
-            loadform(new account());
+            loadform(new account(this.Username,this.Password,this.Mail,this.Id,this,this.menu));
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

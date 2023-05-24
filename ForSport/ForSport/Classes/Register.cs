@@ -101,9 +101,9 @@ namespace ForSport.Classes
             MySqlCommand insert_command = new MySqlCommand(insert_sql, Database.connection); // vytvorenie komandu 
             insert_command.ExecuteNonQuery(); // zapis do DB
 
-            this.Balance = 0;
+            this.Balance = 100;
 
-            string insert_balance_sql = $"INSERT INTO user_balance (`id`, `balance`) VALUES(\'{this.Id}\',\'0.00\')"; // sql na vpisanie dat do DB
+            string insert_balance_sql = $"INSERT INTO user_balance (`id`, `balance`) VALUES(\'{this.Id}\',\'100.00\')"; // sql na vpisanie dat do DB
             MySqlCommand insert_balance_command = new MySqlCommand(insert_balance_sql, Database.connection); // vytvorenie komandu 
             insert_balance_command.ExecuteNonQuery(); // zapis do DB
             return true;

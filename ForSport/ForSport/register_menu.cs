@@ -52,7 +52,7 @@ namespace ForSport
                 bool valid_register = register.register();
                 if (valid_register == true)
                 {
-                    new app(register.Username, register.Password, register.Id, register.Mail, register.Balance).Show();
+                    new app(register.Username, register.Password, register.Id, register.Mail, register.Balance,menu).Show();
                     this.Close();
                 }
             }

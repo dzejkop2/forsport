@@ -33,12 +33,6 @@ namespace ForSport
             tb_password.PasswordChar = '*';
         }
 
-            /* debug id generatoru
-            IdGenerator id = new IdGenerator();
-            id.new_id();
-            MessageBox.Show(id.id);
-            */
-
         private void button1_Click(object sender, EventArgs e) // button pre pripojenie
         {
             string username = tb_username.Text; // bere string z textboxu
@@ -59,7 +53,9 @@ namespace ForSport
                 if (valid_login == true)
                 {
                     MessageBox.Show("Uspesne si sa prihlasil");
-                    new app(login.Username,login.Password,login.Id,login.Mail,login.Balance).Show();
+                    new app(login.Username,login.Password,login.Id,login.Mail,login.Balance,this).Show();
+                    tb_username.Text = "";
+                    tb_password.Text = "";
                     this.Hide();
                 }
                 else

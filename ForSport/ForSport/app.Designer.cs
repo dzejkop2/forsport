@@ -124,7 +124,8 @@
             // lb_account
             // 
             this.lb_account.AutoSize = true;
-            this.lb_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lb_account.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lb_account.ForeColor = System.Drawing.Color.White;
             this.lb_account.Location = new System.Drawing.Point(882, 14);
             this.lb_account.Name = "lb_account";
