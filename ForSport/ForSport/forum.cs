@@ -20,7 +20,6 @@ namespace ForSport
         public string Username { get => username; set => username = value; }
 
         List<Comments> comments = new List<Comments>();
-        DateTime current_date = DateTime.Now;
         public forum(string username)
         {
             InitializeComponent();
@@ -39,7 +38,7 @@ namespace ForSport
             {
                 if (tb_sprava.Text.Length != 200)
                 { 
-                    publish_comment(this.Username, tb_sprava.Text, current_date.ToString());
+                    publish_comment(this.Username, tb_sprava.Text, DateTime.Now.ToString("dd/MM/yyyy HH:mm"));
                     panel_main.Controls.Clear();
                     comments.Clear();
                     get_comments();

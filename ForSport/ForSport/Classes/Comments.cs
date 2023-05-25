@@ -48,7 +48,8 @@ namespace ForSport.Classes
 
             Label lb_date = new Label();
             lb_date.Text = this.Date;
-            lb_date.Location = new Point(main_comment_panel.Size.Width - 80, 10); 
+            lb_date.Location = new Point(main_comment_panel.Size.Width - 130, 10);
+            lb_date.Size = new System.Drawing.Size(150, 20);
             lb_date.ForeColor = Color.FromArgb(0, 0, 0);
             lb_date.Font = new Font("Microsoft Sans Serif", 9);
             main_comment_panel.Controls.Add(lb_date);
