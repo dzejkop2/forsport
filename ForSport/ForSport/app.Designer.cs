@@ -172,6 +172,7 @@
             this.bt_admin.TabIndex = 1;
             this.bt_admin.Text = "Účty";
             this.bt_admin.UseVisualStyleBackColor = false;
+            this.bt_admin.Click += new System.EventHandler(this.bt_admin_Click);
             // 
             // bt_vysledky
             // 

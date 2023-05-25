@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using ForSport.Classes;
 using System.Runtime.InteropServices;
+using System.Xml.Linq;
 
 namespace ForSport
 {
@@ -49,11 +50,25 @@ namespace ForSport
             Register register = new Register(username, password, mail);
             if (tb_username.Text != "" && tb_password.Text != "" && tb_email.Text != "") // pozrie ci sme zapisali meno,heslo a mail
             {
-                bool valid_register = register.register();
-                if (valid_register == true)
+                if (tb_username.Text.Length <= 50)
                 {
-                    new app(register.Username, register.Password, register.Id, register.Mail, register.Balance,menu).Show();
-                    this.Close();
+                    if (tb_password.Text.Length <= 50)
+                    {
+                        bool valid_register = register.register();
+                        if (valid_register == true)
+                        {
+                            new app(register.Username, register.Password, register.Id, register.Mail, register.Balance, menu).Show();
+                            this.Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Heslo musi byt mensie ako 50 znakov");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Meno musi byt mensie ako 50 znakov");
                 }
             }
             else

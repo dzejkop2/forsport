@@ -40,6 +40,12 @@ namespace ForSport.Classes
             MySqlCommand insert_command = new MySqlCommand(insert_sql, Database.connection); // vytvorenie komandu 
             insert_command.ExecuteNonQuery();
         }
+        public void change_balance(float new_balance, string id)
+        {
+            string insert_sql = $" UPDATE user_balance SET balance = {new_balance} WHERE id = \'{id}\';"; // sql na vpisanie dat do DB
+            MySqlCommand insert_command = new MySqlCommand(insert_sql, Database.connection); // vytvorenie komandu 
+            insert_command.ExecuteNonQuery();
+        }
         private bool check(string parameter, string to_check)
         {
             string sql = $"SELECT * FROM user_info WHERE {parameter} = \'{to_check}\'";

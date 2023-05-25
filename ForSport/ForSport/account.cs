@@ -1,4 +1,5 @@
 ﻿using ForSport.Classes;
+using Microsoft.Win32;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -80,12 +81,19 @@ namespace ForSport
                 {
                     if (tb_change1.Text != this.Username)
                     {
-                        if (tb_change2.Text == this.Password)
-                        { 
-                            info.change_name(tb_change1.Text, this.Id);
-                            MessageBox.Show("Zmena mena bola uspešna!");
-                            menu.Show();
-                            app.Close();
+                        if (tb_change1.Text.Length <= 50)
+                        {
+                            if (tb_change2.Text == this.Password)
+                            {
+                                info.change_name(tb_change1.Text, this.Id);
+                                MessageBox.Show("Zmena mena bola uspešna!");
+                                menu.Show();
+                                app.Close();
+                            } 
+                        }
+                        else
+                        {
+                            MessageBox.Show("Meno musi byt mensie ako 50 znakov");
                         }
                     }
                     else MessageBox.Show("Toto meno už používaš");
@@ -112,14 +120,21 @@ namespace ForSport
                 {
                     if (tb_change1.Text != this.Password)
                     {
-                        if (tb_change2.Text == tb_change1.Text)
+                        if (tb_change1.Text.Length <= 50)
                         {
-                            info.change_password(tb_change1.Text, this.Id);
-                            MessageBox.Show("Zmena hesla bola uspešna!");
-                            menu.Show();
-                            app.Close();
+                            if (tb_change2.Text == tb_change1.Text)
+                            {
+                                info.change_password(tb_change1.Text, this.Id);
+                                MessageBox.Show("Zmena hesla bola uspešna!");
+                                menu.Show();
+                                app.Close();
+                            }
+                            else MessageBox.Show("Heslo sa ti nezhoduje!");
                         }
-                        else MessageBox.Show("Heslo sa ti nezhoduje!");
+                        else
+                        {
+                            MessageBox.Show("Heslo musi byt mensie ako 50 znakov");
+                        }
                     }
                     else MessageBox.Show("Toto heslo už používaš");
                 }

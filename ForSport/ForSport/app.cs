@@ -112,6 +112,11 @@ namespace ForSport
             loadform(new account(this.Username,this.Password,this.Mail,this.Id,this,this.menu));
         }
 
+        private void bt_admin_Click(object sender, EventArgs e)
+        {
+            loadform(new admin());
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);

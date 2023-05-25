@@ -36,10 +36,9 @@ namespace ForSport
         {
             if(tb_sprava.Text != "")
             {
-                MessageBox.Show(tb_sprava.Text.Length.ToString());
                 if (tb_sprava.Text.Length <= 200)
                 { 
-                    publish_comment(this.Username, tb_sprava.Text, DateTime.Now.ToString("dd/MM/yyyy HH:mm"));
+                    publish_comment(this.Username, tb_sprava.Text, DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
                     panel_main.Controls.Clear();
                     comments.Clear();
                     get_comments();
@@ -69,7 +68,7 @@ namespace ForSport
         private void get_comments()
         {
             int pos = 0;
-            string sql = $"SELECT * FROM forum ORDER BY date ASC";
+            string sql = $"SELECT * FROM forum ORDER BY date DESC";
             MySqlCommand command = new MySqlCommand(sql, Database.connection);
             MySqlDataReader reader = command.ExecuteReader();
 
