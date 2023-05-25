@@ -36,7 +36,8 @@ namespace ForSport
         {
             if(tb_sprava.Text != "")
             {
-                if (tb_sprava.Text.Length != 200)
+                MessageBox.Show(tb_sprava.Text.Length.ToString());
+                if (tb_sprava.Text.Length >= 200)
                 { 
                     publish_comment(this.Username, tb_sprava.Text, DateTime.Now.ToString("dd/MM/yyyy HH:mm"));
                     panel_main.Controls.Clear();
