@@ -10,8 +10,8 @@ namespace ForSport
 {
     internal class Database
     {
-        //private static string connstring = "SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c46ForSport;UID=c46forsport;PASSWORD=byxB@iNT47;charset=utf8;";
-        private static string connstring = "SERVER=localhost;DATABASE=forsport_test;UID=root;PASSWORD=;CHARSET=utf8";
+        private static string connstring = "SERVER=usa.vybrat.eu;PORT=3306;DATABASE=c46ForSport;UID=c46forsport;PASSWORD=byxB@iNT47;charset=utf8;";
+        //private static string connstring = "SERVER=localhost;DATABASE=forsport_test;UID=root;PASSWORD=;CHARSET=utf8";
         public static MySqlConnection connection { get; private set; } // property pre ziskanie pirpojenia (treba pre query)
 
         MySqlConnection conn = new MySqlConnection(); // vytvorenie samotneho pripojenia
