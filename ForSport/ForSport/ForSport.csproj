@@ -103,6 +103,7 @@
     <Compile Include="Classes\Database.cs" />
     <Compile Include="Classes\IdGenerator.cs" />
     <Compile Include="Classes\Login.cs" />
+    <Compile Include="Classes\Odds.cs" />
     <Compile Include="Classes\Register.cs" />
     <Compile Include="forum.cs">
       <SubType>Form</SubType>
