@@ -36,6 +36,8 @@ namespace ForSport
             lb_name.Text = this.Username;
             lb_mail.Text = this.Mail;
             lb_password.Text = change_to_asterisk(this.Password);
+            bt_accept.FlatAppearance.BorderSize = 0;
+            
         }
         private void bt_change_name_Click(object sender, EventArgs e)
         {

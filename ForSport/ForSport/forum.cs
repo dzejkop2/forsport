@@ -69,7 +69,7 @@ namespace ForSport
         private void get_comments()
         {
             int pos = 0;
-            string sql = $"SELECT * FROM forum";
+            string sql = $"SELECT * FROM forum ORDER BY date ASC";
             MySqlCommand command = new MySqlCommand(sql, Database.connection);
             MySqlDataReader reader = command.ExecuteReader();
 
