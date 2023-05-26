@@ -29,6 +29,7 @@ namespace ForSport
             this.Id = id;
             InitializeComponent();
             refresh_data();
+            bt_commit.FlatAppearance.BorderSize = 0;
         }
 
         private void lb_balance_DoubleClick(object sender, EventArgs e)

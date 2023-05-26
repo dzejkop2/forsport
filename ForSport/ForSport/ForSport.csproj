@@ -228,5 +228,8 @@
   <ItemGroup>
     <None Include="Resources\cAEh.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForSport_final2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

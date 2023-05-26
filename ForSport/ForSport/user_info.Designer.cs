@@ -48,6 +48,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(202, 9);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -155,6 +156,7 @@
             // 
             this.lb_zmena.AutoSize = true;
             this.lb_zmena.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_zmena.ForeColor = System.Drawing.Color.Black;
             this.lb_zmena.Location = new System.Drawing.Point(202, 233);
             this.lb_zmena.Name = "lb_zmena";
             this.lb_zmena.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -176,6 +178,7 @@
             // 
             this.lb_zmena2.AutoSize = true;
             this.lb_zmena2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_zmena2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
             this.lb_zmena2.Location = new System.Drawing.Point(86, 293);
             this.lb_zmena2.Name = "lb_zmena2";
             this.lb_zmena2.Size = new System.Drawing.Size(51, 20);
@@ -185,17 +188,22 @@
             // 
             // bt_commit
             // 
+            this.bt_commit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.bt_commit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_commit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_commit.ForeColor = System.Drawing.Color.Black;
             this.bt_commit.Location = new System.Drawing.Point(326, 293);
             this.bt_commit.Name = "bt_commit";
             this.bt_commit.Size = new System.Drawing.Size(92, 49);
             this.bt_commit.TabIndex = 16;
-            this.bt_commit.Text = "vykonat";
-            this.bt_commit.UseVisualStyleBackColor = true;
+            this.bt_commit.Text = "Vykonať";
+            this.bt_commit.UseVisualStyleBackColor = false;
             this.bt_commit.Visible = false;
             this.bt_commit.Click += new System.EventHandler(this.bt_commit_Click);
             // 
             // tb_zmena_balance
             // 
+            this.tb_zmena_balance.ForeColor = System.Drawing.Color.Black;
             this.tb_zmena_balance.Location = new System.Drawing.Point(90, 322);
             this.tb_zmena_balance.Name = "tb_zmena_balance";
             this.tb_zmena_balance.Size = new System.Drawing.Size(100, 20);

@@ -62,7 +62,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ForSport.Properties.Resources.tipsport_logo_vector;
+            this.pictureBox1.Image = global::ForSport.Properties.Resources.ForSport_final2;
             this.pictureBox1.Location = new System.Drawing.Point(71, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 73);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login_menu));
             this.button1 = new System.Windows.Forms.Button();
             this.tb_username = new System.Windows.Forms.TextBox();
             this.tb_password = new System.Windows.Forms.TextBox();
@@ -112,7 +113,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::ForSport.Properties.Resources.tipsport_logo_vector;
+            this.pictureBox3.Image = global::ForSport.Properties.Resources.ForSport_final2;
             this.pictureBox3.Location = new System.Drawing.Point(73, 43);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(162, 73);
@@ -203,6 +204,7 @@
             this.Controls.Add(this.tb_username);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "login_menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
