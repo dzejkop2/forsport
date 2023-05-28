@@ -83,6 +83,16 @@ namespace ForSport.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ForSport_finalhulin {
+            get {
+                object obj = ResourceManager.GetObject("ForSport_finalhulin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_SK {
             get {
                 object obj = ResourceManager.GetObject("logo-SK", resourceCulture);

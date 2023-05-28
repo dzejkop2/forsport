@@ -231,5 +231,8 @@
   <ItemGroup>
     <None Include="Resources\ForSport_final2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForSport_finalhulin.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
