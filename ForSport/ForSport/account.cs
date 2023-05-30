@@ -153,6 +153,13 @@ namespace ForSport
             
         }
 
+        private void bt_logout_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Boli ste úspešne odhlásený!");
+            menu.Show();
+            app.Close();
+        }
+
         private void bt_change_password_Click(object sender, EventArgs e)
         {
             lb_change.Text = "Zmena Hesla";

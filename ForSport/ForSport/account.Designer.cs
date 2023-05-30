@@ -50,12 +50,14 @@
             this.lb_info_mail = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_info_name = new System.Windows.Forms.Label();
+            this.bt_logout = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.bt_logout);
             this.panel1.Controls.Add(this.lb_change4);
             this.panel1.Controls.Add(this.bt_accept);
             this.panel1.Controls.Add(this.lb_change);
@@ -168,7 +170,7 @@
             this.lb_info2.AutoSize = true;
             this.lb_info2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lb_info2.ForeColor = System.Drawing.Color.Black;
-            this.lb_info2.Location = new System.Drawing.Point(727, 141);
+            this.lb_info2.Location = new System.Drawing.Point(727, 180);
             this.lb_info2.Name = "lb_info2";
             this.lb_info2.Size = new System.Drawing.Size(310, 20);
             this.lb_info2.TabIndex = 13;
@@ -179,7 +181,7 @@
             this.lb_info1.AutoSize = true;
             this.lb_info1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lb_info1.ForeColor = System.Drawing.Color.Black;
-            this.lb_info1.Location = new System.Drawing.Point(727, 93);
+            this.lb_info1.Location = new System.Drawing.Point(727, 132);
             this.lb_info1.Name = "lb_info1";
             this.lb_info1.Size = new System.Drawing.Size(376, 20);
             this.lb_info1.TabIndex = 12;
@@ -191,7 +193,7 @@
             this.bt_change_password.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_change_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_change_password.ForeColor = System.Drawing.Color.Black;
-            this.bt_change_password.Location = new System.Drawing.Point(605, 179);
+            this.bt_change_password.Location = new System.Drawing.Point(605, 218);
             this.bt_change_password.Name = "bt_change_password";
             this.bt_change_password.Size = new System.Drawing.Size(116, 41);
             this.bt_change_password.TabIndex = 11;
@@ -238,7 +240,7 @@
             this.bt_change_mail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_change_mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_change_mail.ForeColor = System.Drawing.Color.Black;
-            this.bt_change_mail.Location = new System.Drawing.Point(605, 132);
+            this.bt_change_mail.Location = new System.Drawing.Point(605, 171);
             this.bt_change_mail.Name = "bt_change_mail";
             this.bt_change_mail.Size = new System.Drawing.Size(116, 41);
             this.bt_change_mail.TabIndex = 7;
@@ -263,7 +265,7 @@
             this.bt_change_name.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_change_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_change_name.ForeColor = System.Drawing.Color.Black;
-            this.bt_change_name.Location = new System.Drawing.Point(605, 83);
+            this.bt_change_name.Location = new System.Drawing.Point(605, 122);
             this.bt_change_name.Name = "bt_change_name";
             this.bt_change_name.Size = new System.Drawing.Size(116, 41);
             this.bt_change_name.TabIndex = 5;
@@ -329,6 +331,20 @@
             this.lb_info_name.TabIndex = 0;
             this.lb_info_name.Text = "Meno:";
             // 
+            // bt_logout
+            // 
+            this.bt_logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(161)))), ((int)(((byte)(62)))));
+            this.bt_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_logout.ForeColor = System.Drawing.Color.Black;
+            this.bt_logout.Location = new System.Drawing.Point(605, 75);
+            this.bt_logout.Name = "bt_logout";
+            this.bt_logout.Size = new System.Drawing.Size(116, 41);
+            this.bt_logout.TabIndex = 21;
+            this.bt_logout.Text = "Odhlásiť sa";
+            this.bt_logout.UseVisualStyleBackColor = false;
+            this.bt_logout.Click += new System.EventHandler(this.bt_logout_Click);
+            // 
             // account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,5 +384,6 @@
         private System.Windows.Forms.Label lb_change;
         private System.Windows.Forms.Button bt_accept;
         private System.Windows.Forms.Label lb_change4;
+        private System.Windows.Forms.Button bt_logout;
     }
 }
