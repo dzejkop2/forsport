@@ -81,6 +81,7 @@ namespace ForSport.Classes
             comment_panel.Controls.Add(lb_text);*/
 
             Label lb_name = new Label();
+            lb_name.Name = "lb_main";
             lb_name.AutoSize = true;
             lb_name.Text = $"{this.First_team} - {this.Second_team}";
             lb_name.Location = new Point(15, main_odds_panel.Height/2-lb_name.Height/2);
@@ -97,6 +98,7 @@ namespace ForSport.Classes
             main_odds_panel.Controls.Add(lb_date);
 
             Button btn_kurz1 = new Button();
+            btn_kurz1.Name = $"{this.First_team},{this.Second_team},kurz1";
             btn_kurz1.Size = new Size(55, 30);
             btn_kurz1.Text = this.Kurz1;
             btn_kurz1.ForeColor = Color.FromArgb(0, 92, 178);
@@ -106,6 +108,7 @@ namespace ForSport.Classes
             main_odds_panel.Controls.Add(btn_kurz1);
 
             Button btn_kurz10 = new Button();
+            btn_kurz10.Name = $"{this.First_team},{this.Second_team},kurz10";
             btn_kurz10.Size = new Size(55, 30);
             btn_kurz10.Text = this.Kurz10;
             btn_kurz10.ForeColor = Color.FromArgb(0, 92, 178);
@@ -114,6 +117,7 @@ namespace ForSport.Classes
             main_odds_panel.Controls.Add(btn_kurz10);
 
             Button btn_kurz0 = new Button();
+            btn_kurz0.Name = $"{this.First_team},{this.Second_team},kurz0";
             btn_kurz0.Size = new Size(55, 30);
             btn_kurz0.Text = this.Kurz0;
             btn_kurz0.ForeColor = Color.FromArgb(0, 92, 178);
@@ -122,6 +126,7 @@ namespace ForSport.Classes
             main_odds_panel.Controls.Add(btn_kurz0);
 
             Button btn_kurz02 = new Button();
+            btn_kurz02.Name = $"{this.First_team},{this.Second_team},kurz02";
             btn_kurz02.Size = new Size(55, 30);
             btn_kurz02.Text = this.Kurz02;
             btn_kurz02.ForeColor = Color.FromArgb(0, 92, 178);
@@ -130,6 +135,7 @@ namespace ForSport.Classes
             main_odds_panel.Controls.Add(btn_kurz02);
 
             Button btn_kurz2 = new Button();
+            btn_kurz2.Name = $"{this.First_team},{this.Second_team},kurz2";
             btn_kurz2.Size = new Size(55, 30);
             btn_kurz2.Text = this.Kurz2;
             btn_kurz2.ForeColor = Color.FromArgb(0, 92, 178);

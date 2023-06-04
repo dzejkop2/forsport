@@ -58,22 +58,37 @@ namespace ForSport
             this.Controls.Add(btn_skuska);*/
             
         }
-        private void deal_event(string vysledok, string kurz)
+        private void deal_event(string meno, string kurz)
         {
-            lb_vysledok.Text = vysledok;
+
+            string[] rozdelenie = meno.Split(',');
+            lb_vysledok.Text = $"{rozdelenie[0]} + {rozdelenie[2]}";
+           switch (rozdelenie[2])
+            {
+                case "kurz1": lb_vysledok.Text = $"{rozdelenie[0]} vyhra"; break;
+                case "kurz10": lb_vysledok.Text = $"{rozdelenie[0]} neprehra"; break;
+                case "kurz0": lb_vysledok.Text = $"Remíza"; break;
+                case "kurz02": lb_vysledok.Text = $"{rozdelenie[1]} neprehra2"; break;
+                case "kurz2": lb_vysledok.Text = $"{rozdelenie[1]} vyhra2"; break;
+                default: lb_vysledok.Text = $"nefunguje{rozdelenie[0]}"; break;
+                
+            }
             lb_kurzvysledok.Text= kurz;
+            
         }
         private void load_btn_events()
         {
+            string tymy = "";
             foreach (Panel panel_tmp in panel_main.Controls.OfType<Panel>())
             {
+                
                 foreach (Button item in panel_tmp.Controls.OfType<Button>())
                 {
-                    item.Click += (s, e) => { deal_event(item.Text, item.Name); };
+                    
+                    item.Click += (s, e) => { deal_event(item.Name, item.Text); };
                 }
             }
             
-            lb_vysledok.Text = panel_main.Controls.Count.ToString();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

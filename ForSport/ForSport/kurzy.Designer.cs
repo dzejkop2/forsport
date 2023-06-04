@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel_main = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lb_vysledok = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.lb_kurzvysledok = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lb_vysledok = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,24 +67,14 @@
             this.panel1.Size = new System.Drawing.Size(281, 489);
             this.panel1.TabIndex = 7;
             // 
-            // label2
+            // lb_kurzvysledok
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(22, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 24);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Vysledok";
-            // 
-            // lb_vysledok
-            // 
-            this.lb_vysledok.AutoSize = true;
-            this.lb_vysledok.Location = new System.Drawing.Point(133, 30);
-            this.lb_vysledok.Name = "lb_vysledok";
-            this.lb_vysledok.Size = new System.Drawing.Size(35, 13);
-            this.lb_vysledok.TabIndex = 1;
-            this.lb_vysledok.Text = "label3";
+            this.lb_kurzvysledok.AutoSize = true;
+            this.lb_kurzvysledok.Location = new System.Drawing.Point(133, 115);
+            this.lb_kurzvysledok.Name = "lb_kurzvysledok";
+            this.lb_kurzvysledok.Size = new System.Drawing.Size(35, 13);
+            this.lb_kurzvysledok.TabIndex = 3;
+            this.lb_kurzvysledok.Text = "label3";
             // 
             // label3
             // 
@@ -96,14 +86,24 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Kurz";
             // 
-            // lb_kurzvysledok
+            // lb_vysledok
             // 
-            this.lb_kurzvysledok.AutoSize = true;
-            this.lb_kurzvysledok.Location = new System.Drawing.Point(133, 115);
-            this.lb_kurzvysledok.Name = "lb_kurzvysledok";
-            this.lb_kurzvysledok.Size = new System.Drawing.Size(35, 13);
-            this.lb_kurzvysledok.TabIndex = 3;
-            this.lb_kurzvysledok.Text = "label3";
+            this.lb_vysledok.AutoSize = true;
+            this.lb_vysledok.Location = new System.Drawing.Point(115, 36);
+            this.lb_vysledok.Name = "lb_vysledok";
+            this.lb_vysledok.Size = new System.Drawing.Size(35, 13);
+            this.lb_vysledok.TabIndex = 1;
+            this.lb_vysledok.Text = "label3";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(22, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Vysledok";
             // 
             // button1
             // 
