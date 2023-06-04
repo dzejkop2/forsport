@@ -48,14 +48,37 @@ namespace ForSport
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Button btn_skuska = new Button();
+            /*Button btn_skuska = new Button();
             btn_skuska.BackColor = Color.Black;
             btn_skuska.Enabled = false;
             btn_skuska.Text = "SKUSKA";
             btn_skuska.Location = new Point(0, 0);
             btn_skuska.Size = new Size(500, 500);
             btn_skuska.BringToFront();
-            this.Controls.Add(btn_skuska);
+            this.Controls.Add(btn_skuska);*/
+            
+        }
+        private void deal_event(string vysledok, string kurz)
+        {
+            lb_vysledok.Text = vysledok;
+            lb_kurzvysledok.Text= kurz;
+        }
+        private void load_btn_events()
+        {
+            foreach (Panel panel_tmp in panel_main.Controls.OfType<Panel>())
+            {
+                foreach (Button item in panel_tmp.Controls.OfType<Button>())
+                {
+                    item.Click += (s, e) => { deal_event(item.Text, item.Name); };
+                }
+            }
+            
+            lb_vysledok.Text = panel_main.Controls.Count.ToString();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            load_btn_events();
         }
     }
 }

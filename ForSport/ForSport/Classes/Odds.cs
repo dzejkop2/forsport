@@ -137,5 +137,7 @@ namespace ForSport.Classes
             btn_kurz2.Font = new Font("Microsoft Sans Serif", 12);
             main_odds_panel.Controls.Add(btn_kurz2);
         }
+
+        
     }
 }
