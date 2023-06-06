@@ -92,11 +92,23 @@
     <Compile Include="account.Designer.cs">
       <DependentUpon>account.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin_poziadavky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_poziadavky.Designer.cs">
+      <DependentUpon>admin_poziadavky.cs</DependentUpon>
+    </Compile>
     <Compile Include="app.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="app.Designer.cs">
       <DependentUpon>app.cs</DependentUpon>
+    </Compile>
+    <Compile Include="balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="balance.Designer.cs">
+      <DependentUpon>balance.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Change_info.cs" />
     <Compile Include="Classes\Comments.cs" />
@@ -105,6 +117,12 @@
     <Compile Include="Classes\Login.cs" />
     <Compile Include="Classes\Odds.cs" />
     <Compile Include="Classes\Register.cs" />
+    <Compile Include="poziadavka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poziadavka.Designer.cs">
+      <DependentUpon>poziadavka.cs</DependentUpon>
+    </Compile>
     <Compile Include="user_info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,8 +176,14 @@
     <EmbeddedResource Include="account.resx">
       <DependentUpon>account.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin_poziadavky.resx">
+      <DependentUpon>admin_poziadavky.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="app.resx">
       <DependentUpon>app.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="balance.resx">
+      <DependentUpon>balance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forum.resx">
       <DependentUpon>forum.cs</DependentUpon>
@@ -172,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login_menu.resx">
       <DependentUpon>login_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poziadavka.resx">
+      <DependentUpon>poziadavka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

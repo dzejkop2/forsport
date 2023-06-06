@@ -36,17 +36,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_balance = new System.Windows.Forms.Label();
             this.lb_account = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_admin = new System.Windows.Forms.Button();
             this.bt_vysledky = new System.Windows.Forms.Button();
             this.bt_forum = new System.Windows.Forms.Button();
             this.bt_live = new System.Windows.Forms.Button();
             this.bt_kurzy = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bt_poziadavky = new System.Windows.Forms.Button();
             this.toppanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // mainpanel
@@ -114,13 +115,15 @@
             // lb_balance
             // 
             this.lb_balance.AutoSize = true;
-            this.lb_balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_balance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lb_balance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lb_balance.ForeColor = System.Drawing.Color.White;
             this.lb_balance.Location = new System.Drawing.Point(882, 38);
             this.lb_balance.Name = "lb_balance";
             this.lb_balance.Size = new System.Drawing.Size(57, 20);
             this.lb_balance.TabIndex = 2;
             this.lb_balance.Text = "label1";
+            this.lb_balance.Click += new System.EventHandler(this.lb_balance_Click);
             // 
             // lb_account
             // 
@@ -135,19 +138,10 @@
             this.lb_account.Text = "label1";
             this.lb_account.Click += new System.EventHandler(this.lb_account_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ForSport.Properties.Resources.ForSport_finalhulin;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(139, 66);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.Controls.Add(this.bt_poziadavky);
             this.panel2.Controls.Add(this.bt_admin);
             this.panel2.Controls.Add(this.bt_vysledky);
             this.panel2.Controls.Add(this.bt_forum);
@@ -235,6 +229,26 @@
             this.bt_kurzy.UseVisualStyleBackColor = false;
             this.bt_kurzy.Click += new System.EventHandler(this.bt_kurzy_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ForSport.Properties.Resources.ForSport_finalhulin;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(139, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bt_poziadavky
+            // 
+            this.bt_poziadavky.Location = new System.Drawing.Point(619, 3);
+            this.bt_poziadavky.Name = "bt_poziadavky";
+            this.bt_poziadavky.Size = new System.Drawing.Size(100, 33);
+            this.bt_poziadavky.TabIndex = 2;
+            this.bt_poziadavky.Text = "button1";
+            this.bt_poziadavky.UseVisualStyleBackColor = true;
+            this.bt_poziadavky.Click += new System.EventHandler(this.bt_poziadavky_Click);
+            // 
             // app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,8 +268,8 @@
             this.toppanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,5 +289,6 @@
         private System.Windows.Forms.Label lb_balance;
         private System.Windows.Forms.Label lb_account;
         private System.Windows.Forms.Button bt_admin;
+        private System.Windows.Forms.Button bt_poziadavky;
     }
 }

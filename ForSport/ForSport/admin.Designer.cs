@@ -45,6 +45,7 @@
             // 
             // datagrid_users
             // 
+            this.datagrid_users.AllowUserToAddRows = false;
             this.datagrid_users.AllowUserToResizeColumns = false;
             this.datagrid_users.AllowUserToResizeRows = false;
             this.datagrid_users.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;

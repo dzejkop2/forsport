@@ -60,6 +60,7 @@ namespace ForSport
             if (id != "1111111111")
             {
                 bt_admin.Hide();
+                bt_poziadavky.Hide();
             }
         }
 
@@ -115,6 +116,16 @@ namespace ForSport
         private void bt_admin_Click(object sender, EventArgs e)
         {
             loadform(new admin());
+        }
+
+        private void lb_balance_Click(object sender, EventArgs e)
+        {
+            loadform(new balance(this.Id, this.Username ,this.Balance));
+        }
+
+        private void bt_poziadavky_Click(object sender, EventArgs e)
+        {
+            loadform(new admin_poziadavky());
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

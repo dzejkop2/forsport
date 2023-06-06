@@ -173,3 +173,6 @@ C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.a
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.user_info.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.admin.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.user_info.resources
+C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.balance.resources
+C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.admin_poziadavky.resources
+C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.poziadavka.resources

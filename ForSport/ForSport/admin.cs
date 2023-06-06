@@ -47,7 +47,7 @@ namespace ForSport
 
         private void refresh_datagrid()
         {
-            while (datagrid_users.Rows.Count > 1)
+            while (datagrid_users.Rows.Count >= 1)
             {
                 foreach (DataGridViewRow row in datagrid_users.Rows)
                 {
