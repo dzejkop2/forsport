@@ -8,19 +8,16 @@ namespace ForSport.Classes
 {
     internal class Pavuk
     {
-        private string name;
-        private int points;
-        private string postup;
+        private string meno;
+        private string vysledok;
 
-        public string Name { get => name; set => name = value; }
-        public int Points { get => points; set => points = value; }
-        public string Postup { get => postup; set => postup = value; }
+        public string Meno { get => meno; set => meno = value; }
+        public string Vysledok { get => vysledok; set => vysledok = value; }
 
-        public Pavuk(string name, int points, string postup)
+        public Pavuk(string meno)
         {
-            this.name = name;
-            this.points = points;
-            this.postup = postup;
+            this.meno = meno;
+            this.vysledok = "";
         }
     }
 }

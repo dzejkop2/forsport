@@ -91,7 +91,7 @@ namespace ForSport
 
         private void bt_kurzy_Click(object sender, EventArgs e)
         {
-            loadform(new kurzy());
+            loadform(new kurzy(this.Id, this.Balance));
         }
 
         private void bt_live_Click(object sender, EventArgs e)

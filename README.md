@@ -1,2 +1,2 @@
 # Forsport
-NAME JE DOČASNY LEN CHCEM VYTVORIT TEPOZITAR TAK NEPICUJTE DIK (tepozitar :))
+Simulátor stávkovacej aplikácie ako školský projekt v programovacom jazyku C#

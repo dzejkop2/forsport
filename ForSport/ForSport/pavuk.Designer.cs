@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lb_team1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb_team2 = new System.Windows.Forms.Label();
             this.lb_team4 = new System.Windows.Forms.Label();
             this.lb_team3 = new System.Windows.Forms.Label();
             this.lb_postup1 = new System.Windows.Forms.Label();
@@ -63,18 +63,18 @@
             this.lb_team1.Text = "team1";
             this.lb_team1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lb_team2
             // 
-            this.label2.BackColor = System.Drawing.Color.Silver;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(122, 149);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 43);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "team2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_team2.BackColor = System.Drawing.Color.Silver;
+            this.lb_team2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lb_team2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lb_team2.ForeColor = System.Drawing.Color.Black;
+            this.lb_team2.Location = new System.Drawing.Point(122, 149);
+            this.lb_team2.Name = "lb_team2";
+            this.lb_team2.Size = new System.Drawing.Size(205, 43);
+            this.lb_team2.TabIndex = 1;
+            this.lb_team2.Text = "team2";
+            this.lb_team2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lb_team4
             // 
@@ -299,6 +299,7 @@
             this.bt_vymaz.TabIndex = 21;
             this.bt_vymaz.Text = "Vymaž pavúka";
             this.bt_vymaz.UseVisualStyleBackColor = false;
+            this.bt_vymaz.Click += new System.EventHandler(this.bt_vymaz_Click);
             // 
             // button1
             // 
@@ -312,6 +313,7 @@
             this.button1.TabIndex = 22;
             this.button1.Text = "Odohraj zápasy";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pavuk
             // 
@@ -335,7 +337,7 @@
             this.Controls.Add(this.lb_postup1);
             this.Controls.Add(this.lb_team4);
             this.Controls.Add(this.lb_team3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lb_team2);
             this.Controls.Add(this.lb_team1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "pavuk";
@@ -347,7 +349,7 @@
         #endregion
 
         private System.Windows.Forms.Label lb_team1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb_team2;
         private System.Windows.Forms.Label lb_team4;
         private System.Windows.Forms.Label lb_team3;
         private System.Windows.Forms.Label lb_postup1;
