@@ -44,6 +44,7 @@
             this.bt_forum = new System.Windows.Forms.Button();
             this.bt_live = new System.Windows.Forms.Button();
             this.bt_kurzy = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.toppanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -151,6 +152,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.bt_poziadavky);
             this.panel2.Controls.Add(this.bt_admin);
             this.panel2.Controls.Add(this.bt_vysledky);
@@ -253,6 +255,20 @@
             this.bt_kurzy.UseVisualStyleBackColor = false;
             this.bt_kurzy.Click += new System.EventHandler(this.bt_kurzy_Click);
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(751, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Teams";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,5 +310,6 @@
         private System.Windows.Forms.Label lb_account;
         private System.Windows.Forms.Button bt_admin;
         private System.Windows.Forms.Button bt_poziadavky;
+        private System.Windows.Forms.Button button1;
     }
 }

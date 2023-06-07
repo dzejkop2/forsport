@@ -129,6 +129,11 @@ namespace ForSport
             loadform(new admin_poziadavky());
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadform(new teams());
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);

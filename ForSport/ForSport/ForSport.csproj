@@ -117,11 +117,18 @@
     <Compile Include="Classes\Login.cs" />
     <Compile Include="Classes\Odds.cs" />
     <Compile Include="Classes\Register.cs" />
+    <Compile Include="Classes\Teams.cs" />
     <Compile Include="poziadavka.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="poziadavka.Designer.cs">
       <DependentUpon>poziadavka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teams.Designer.cs">
+      <DependentUpon>teams.cs</DependentUpon>
     </Compile>
     <Compile Include="user_info.cs">
       <SubType>Form</SubType>
@@ -210,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teams.resx">
+      <DependentUpon>teams.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="user_info.resx">
       <DependentUpon>user_info.cs</DependentUpon>
