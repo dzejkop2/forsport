@@ -56,14 +56,20 @@ namespace ForSport
         {
             if (textBox1.Text.Trim() != string.Empty)
             {
-                //string sql = $"INSERT INTO tymy ('nazov', 'body') VALUES(\'{textBox1.Text}\', \'0\')";
+                get_teams();
+                foreach (Teams t in tymy)
+                {
+                    if (t.Name == textBox1.Text)
+                    {
+                        MessageBox.Show("Tento tým už existuje!");
+                        return;
+                    }
+                }
                 string sql = $"INSERT INTO tymy (`nazov`, `body`) VALUES(\'{textBox1.Text}\', \'0\')";
                 MySqlCommand command = new MySqlCommand(sql, Database.connection);
                 command.ExecuteNonQuery();
                 get_teams();
                 load_DG();
-
-                return;
             }
             else
             {
@@ -72,11 +78,22 @@ namespace ForSport
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            if (textBox2.Text.Trim() != string.Empty)
+            {
+                string sql = $"DELETE FROM tymy WHERE nazov=\'{textBox2.Text}\'";
+                MySqlCommand command = new MySqlCommand(sql, Database.connection);
+                command.ExecuteNonQuery();
+                get_teams();
+                load_DG();
+            }
+            else
+            {
+                MessageBox.Show("Pole nemôže byť prázdne!");
+                return;
+            }
         }
-
-        
     }
 }

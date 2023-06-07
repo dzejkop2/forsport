@@ -38,13 +38,14 @@
             this.lb_account = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bt_Teams = new System.Windows.Forms.Button();
             this.bt_poziadavky = new System.Windows.Forms.Button();
             this.bt_admin = new System.Windows.Forms.Button();
             this.bt_vysledky = new System.Windows.Forms.Button();
             this.bt_forum = new System.Windows.Forms.Button();
             this.bt_live = new System.Windows.Forms.Button();
             this.bt_kurzy = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt_pavuk = new System.Windows.Forms.Button();
             this.toppanel.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -152,7 +153,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GrayText;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.bt_pavuk);
+            this.panel2.Controls.Add(this.bt_Teams);
             this.panel2.Controls.Add(this.bt_poziadavky);
             this.panel2.Controls.Add(this.bt_admin);
             this.panel2.Controls.Add(this.bt_vysledky);
@@ -165,6 +167,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1157, 40);
             this.panel2.TabIndex = 2;
+            // 
+            // bt_Teams
+            // 
+            this.bt_Teams.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Teams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_Teams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_Teams.ForeColor = System.Drawing.Color.White;
+            this.bt_Teams.Location = new System.Drawing.Point(751, 3);
+            this.bt_Teams.Name = "bt_Teams";
+            this.bt_Teams.Size = new System.Drawing.Size(111, 33);
+            this.bt_Teams.TabIndex = 3;
+            this.bt_Teams.Text = "Teams";
+            this.bt_Teams.UseVisualStyleBackColor = true;
+            this.bt_Teams.Click += new System.EventHandler(this.button1_Click);
             // 
             // bt_poziadavky
             // 
@@ -255,19 +271,19 @@
             this.bt_kurzy.UseVisualStyleBackColor = false;
             this.bt_kurzy.Click += new System.EventHandler(this.bt_kurzy_Click);
             // 
-            // button1
+            // bt_pavuk
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(751, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 33);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Teams";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bt_pavuk.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_pavuk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_pavuk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_pavuk.ForeColor = System.Drawing.Color.White;
+            this.bt_pavuk.Location = new System.Drawing.Point(886, 3);
+            this.bt_pavuk.Name = "bt_pavuk";
+            this.bt_pavuk.Size = new System.Drawing.Size(111, 33);
+            this.bt_pavuk.TabIndex = 4;
+            this.bt_pavuk.Text = "Pavúk";
+            this.bt_pavuk.UseVisualStyleBackColor = true;
+            this.bt_pavuk.Click += new System.EventHandler(this.bt_pavuk_Click);
             // 
             // app
             // 
@@ -310,6 +326,7 @@
         private System.Windows.Forms.Label lb_account;
         private System.Windows.Forms.Button bt_admin;
         private System.Windows.Forms.Button bt_poziadavky;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt_Teams;
+        private System.Windows.Forms.Button bt_pavuk;
     }
 }

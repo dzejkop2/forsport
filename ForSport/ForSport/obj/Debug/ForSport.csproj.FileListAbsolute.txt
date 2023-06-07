@@ -111,7 +111,6 @@ C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.lo
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.app.resources
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.app.resources
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.login_menu.resources
-C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.register.resources
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.app.resources
 C:\Users\admin\Desktop\programko\forsport\ForSport\ForSport\obj\Debug\ForSport.register_menu.resources
 C:\Users\jakub\Desktop\Forsport\forsport\ForSport\ForSport\obj\Debug\ForSport.register_menu.resources
@@ -181,3 +180,16 @@ C:\Users\jakub\Desktop\forsport\ForSport\ForSport\obj\Debug\ForSport.balance.res
 C:\Users\jakub\Desktop\forsport\ForSport\ForSport\obj\Debug\ForSport.poziadavka.resources
 C:\Users\jakub\Desktop\forsport\ForSport\ForSport\obj\Debug\ForSport.admin.resources
 C:\Users\jakub\Desktop\forsport\ForSport\ForSport\obj\Debug\ForSport.user_info.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.account.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.admin_poziadavky.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.balance.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.forum.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.kurzy.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.live.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.poziadavka.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.register_menu.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.admin.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.teams.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.user_info.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.vysledky.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.pavuk.resources

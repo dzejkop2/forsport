@@ -110,7 +110,6 @@
             this.label2.Size = new System.Drawing.Size(158, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Názov teamu:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -128,7 +127,7 @@
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(573, 196);
+            this.panel2.Location = new System.Drawing.Point(573, 312);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(449, 147);
             this.panel2.TabIndex = 4;
@@ -139,8 +138,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 37);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Upraviť";
+            this.button2.Text = "Vymazať";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
             // 
@@ -155,9 +155,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(19, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 29);
+            this.label3.Size = new System.Drawing.Size(158, 29);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Upraviť názov:";
+            this.label3.Text = "Názov teamu:";
             // 
             // label4
             // 
@@ -165,9 +165,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(108, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(243, 42);
+            this.label4.Size = new System.Drawing.Size(270, 42);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Upraviť team";
+            this.label4.Text = "Vymazať team";
             // 
             // teams
             // 

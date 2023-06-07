@@ -116,8 +116,15 @@
     <Compile Include="Classes\IdGenerator.cs" />
     <Compile Include="Classes\Login.cs" />
     <Compile Include="Classes\Odds.cs" />
+    <Compile Include="Classes\Pavuk.cs" />
     <Compile Include="Classes\Register.cs" />
     <Compile Include="Classes\Teams.cs" />
+    <Compile Include="pavuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pavuk.Designer.cs">
+      <DependentUpon>pavuk.cs</DependentUpon>
+    </Compile>
     <Compile Include="poziadavka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login_menu.resx">
       <DependentUpon>login_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pavuk.resx">
+      <DependentUpon>pavuk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="poziadavka.resx">
       <DependentUpon>poziadavka.cs</DependentUpon>

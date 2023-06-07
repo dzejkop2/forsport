@@ -134,6 +134,11 @@ namespace ForSport
             loadform(new teams());
         }
 
+        private void bt_pavuk_Click(object sender, EventArgs e)
+        {
+            loadform(new pavuk());
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
