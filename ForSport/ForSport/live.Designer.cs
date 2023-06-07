@@ -34,12 +34,12 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(268, 183);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(272, 214);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(551, 145);
             this.label1.TabIndex = 8;
-            this.label1.Text = "TOTO BUDU LIVE STAVKY (možno tu nechame len label ze work in progress loliky lol)" +
-    "";
+            this.label1.Text = "WORK IN PROGRESS";
             // 
             // live
             // 
