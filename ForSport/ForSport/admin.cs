@@ -17,7 +17,9 @@ namespace ForSport
         public admin()
         {
             InitializeComponent();
+            datagrid_users.ForeColor = Color.Black;
             refresh_datagrid();
+            
         }
 
         private void loadform(object Form)

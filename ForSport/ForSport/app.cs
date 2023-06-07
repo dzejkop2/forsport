@@ -48,6 +48,7 @@ namespace ForSport
             bt_admin.FlatAppearance.BorderSize = 0;
             btn_exit.FlatAppearance.BorderSize = 0;
             bt_minimize.FlatAppearance.BorderSize = 0;  
+            bt_poziadavky.FlatAppearance.BorderSize = 0;
             this.Username = username;
             this.Password = password;
             this.Id = id;

@@ -14,7 +14,7 @@ namespace ForSport
     public partial class poziadavka : Form
     {
 
-        private string id, username;
+        private string id, username,sprava;
         private float balance,wanted_balance;
         private admin_poziadavky poziadavky;
         private string poziadavka_id, poziadavka_balance;
@@ -22,6 +22,7 @@ namespace ForSport
         public string Username { get => username; private set => username = value; }
         public float Balance { get => balance; private set => balance = value; }
         public float Wanted_balance { get => wanted_balance; set => wanted_balance = value; }
+        public string Sprava { get => sprava; set => sprava = value; }
 
         public poziadavka(string id, string wanted_balance, admin_poziadavky poziadavky)
         {
@@ -30,7 +31,12 @@ namespace ForSport
             this.poziadavka_balance = wanted_balance;
             this.poziadavky = poziadavky;
             fetch_data();
-            lb_user.Text = $"{this.Username} žiada o {this.Wanted_balance}€ \n Práve má {this.Balance}€";
+            lb_user.Text = $"{this.Username} žiada o {this.Wanted_balance}€ \nPráve má {this.Balance}€";
+            lb_sprava.MaximumSize = new Size(300,300);
+            lb_sprava.Text = $"Správa od užívateľa: \n{this.Sprava}";
+            bt_accept.FlatAppearance.BorderSize = 0;
+            bt_deny.FlatAppearance.BorderSize = 0;
+            
         }
 
         private void bt_accept_Click(object sender, EventArgs e)
@@ -85,7 +91,7 @@ namespace ForSport
 
 
             string pozadovany_balance = change_to_dot(poziadavka_balance);
-            string sql_poziadavka = $"SELECT amount FROM poziadavky WHERE id = \'{this.Id}\' AND amount = {pozadovany_balance}";
+            string sql_poziadavka = $"SELECT amount,sprava FROM poziadavky WHERE id = \'{this.Id}\' AND amount = {pozadovany_balance}";
             MySqlCommand command_poziadavka = new MySqlCommand(sql_poziadavka, Database.connection);
             MySqlDataReader reader_poziadavka = command_poziadavka.ExecuteReader();
 
@@ -97,6 +103,7 @@ namespace ForSport
             while (reader_poziadavka.Read())
             {
                 this.Wanted_balance = reader_poziadavka.GetFloat("amount");
+                this.Sprava = reader_poziadavka.GetString("sprava");
             }
             reader_poziadavka.Close();
         }

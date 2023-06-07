@@ -24,34 +24,40 @@ namespace ForSport
             this.Balanse = balanse;
             this.Username = username;
             this.Id = id;
+            bt_addbalance.FlatAppearance.BorderSize = 0;
 
             lb_balance.Text = $"Tvoj balance je: {this.Balanse.ToString()}";
         }
 
         private void bt_addbalance_Click(object sender, EventArgs e)
         {
-            if (tb_zmena_balance.Text != "")
+            if (tb_zmena_balance.Text != "" && tb_sprava.Text != "")
             {
-                tb_zmena_balance.Text = round(tb_zmena_balance.Text);
-                if (float.Parse(tb_zmena_balance.Text) <= 10000.0)
+                if (tb_sprava.Text.Length <= 200)
                 {
-                    string changed = change_to_dot(tb_zmena_balance.Text);
-                    string insert_balance_sql = $"INSERT INTO poziadavky (`id`,`username`, `amount`) VALUES(\'{this.Id}\',\'{this.Username}\',{changed})";
-                    MySqlCommand insert_balance_command = new MySqlCommand(insert_balance_sql, Database.connection);
-                    insert_balance_command.ExecuteNonQuery();
-                    tb_zmena_balance.Text = "";
-                    MessageBox.Show("Požiadavka uspešna");
+                    tb_zmena_balance.Text = round(tb_zmena_balance.Text);
+                    if (float.Parse(tb_zmena_balance.Text) <= 10000.0)
+                    {
+                        string changed = change_to_dot(tb_zmena_balance.Text);
+                        string insert_balance_sql = $"INSERT INTO poziadavky (`id`,`username`,`sprava`, `amount`) VALUES(\'{this.Id}\',\'{this.Username}\',\'{tb_sprava.Text}\',{changed})";
+                        MySqlCommand insert_balance_command = new MySqlCommand(insert_balance_sql, Database.connection);
+                        insert_balance_command.ExecuteNonQuery();
+                        tb_zmena_balance.Text = "";
+                        tb_sprava.Text = "";
+                        MessageBox.Show("Požiadavka uspešna");
+                    }
+                    else
+                    {
+                        tb_zmena_balance.Text = "";
+                        MessageBox.Show("Prekročil si maximalnu požiadavku");
+                    }
                 }
-                else
-                {
-                    tb_zmena_balance.Text = "";
-                    MessageBox.Show("Prekročil si maximalnu požiadavku");
-                }
+                else MessageBox.Show("Správa musí mať menej ako 200 znakov");
                     
             }
             else
             {
-                MessageBox.Show("Musiš zadať koľko peňazí chceš pridať, alebo si nezadal správny počet");
+                MessageBox.Show("Musiš zadať koľko peňazí chceš pridať a musíš zadať správu, alebo si nezadal správny počet");
             }
         }
         private void tb_zmena_balance_Validating(object sender, CancelEventArgs e)

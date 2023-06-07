@@ -48,7 +48,7 @@ namespace ForSport
             string mail = tb_email.Text; // bere string z textboxu
 
             Register register = new Register(username, password, mail);
-            if (tb_username.Text != "" && tb_password.Text != "" && tb_email.Text != "") // pozrie ci sme zapisali meno,heslo a mail
+            if (tb_username.Text != "" && tb_password.Text != "" && tb_email.Text != "" && cb_potvrdenie.Checked) // pozrie ci sme zapisali meno,heslo a mail
             {
                 if (tb_username.Text.Length <= 50)
                 {

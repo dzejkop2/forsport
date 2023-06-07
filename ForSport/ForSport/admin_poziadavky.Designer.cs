@@ -49,6 +49,7 @@
             this.id,
             this.name,
             this.pocet});
+            this.datagrid_users.GridColor = System.Drawing.Color.Black;
             this.datagrid_users.Location = new System.Drawing.Point(12, 12);
             this.datagrid_users.MultiSelect = false;
             this.datagrid_users.Name = "datagrid_users";
