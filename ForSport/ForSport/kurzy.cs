@@ -19,13 +19,15 @@ namespace ForSport
         List<Odds> odds_list = new List<Odds>();
         private string id;
         public float balance;
-        public kurzy(string id, float balance)
+        app appka;
+        public kurzy(string id, float balance, app appka)
         {
             
             InitializeComponent();
             bt_stavit.FlatAppearance.BorderSize = 0;
             this.id = id;
             this.balance = balance;
+            this.appka = appka;
             
             get_odds();
             foreach (Odds odd in odds_list)
@@ -123,12 +125,54 @@ namespace ForSport
                 string sql = $"INSERT INTO stavky (`id`, `mozna_vyhra`, `vysledok`) VALUES(\'{id}\', \'{lb_moznavyhra.Text}\', \'{lb_vysledok.Text}\')";
                 MySqlCommand command = new MySqlCommand(sql, Database.connection);
                 command.ExecuteNonQuery();
+                change_balance(id, vklad1.ToString());
+                appka.refresh_balance();
+                
             }
             else
             {
                 MessageBox.Show("Musíš niečo vložiť.");
                 return;
             }
+
+        }
+        private string change_to_dot(string change)
+        {
+            string new_amount = "";
+            change.Trim();
+            foreach (char i in change)
+            {
+                if (i == ',')
+                {
+                    new_amount = new_amount + '.';
+                }
+                else new_amount = new_amount + i;
+            }
+            return new_amount;
+        }
+        private void change_balance(string id, string peniaze)
+        {
+            string balance = "";
+            string sql = $"SELECT * FROM `user_balance` WHERE id={id}";
+            MySqlCommand command = new MySqlCommand(sql, Database.connection);
+            MySqlDataReader reader = command.ExecuteReader();
+            if (!reader.HasRows)
+            {
+                reader.Close();
+                return;
+            }
+            while (reader.Read())
+            {
+
+                balance = reader.GetString("balance");
+
+            }
+            reader.Close();
+            balance = (float.Parse(balance) - float.Parse(peniaze)).ToString();
+            string new_balance = change_to_dot(balance);
+            string insert_sql = $"UPDATE user_balance SET balance = {new_balance} WHERE id = \'{id}\';";
+            MySqlCommand insert_command = new MySqlCommand(insert_sql, Database.connection);
+            insert_command.ExecuteNonQuery();
         }
     }
 }

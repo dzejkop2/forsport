@@ -200,7 +200,7 @@ namespace ForSport
             
 
         }
-        private void change_balance(string id, string peniaze)
+        public void change_balance(string id, string peniaze)
         {
             string balance = "";
             string sql = $"SELECT * FROM `user_balance` WHERE id={id}";
