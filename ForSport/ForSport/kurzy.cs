@@ -75,8 +75,8 @@ namespace ForSport
                 case "kurz1": lb_vysledok.Text = $"{rozdelenie[0]} vyhrá"; break;
                 case "kurz10": lb_vysledok.Text = $"{rozdelenie[0]} neprehrá"; break;
                 case "kurz0": lb_vysledok.Text = $"{rozdelenie[0]} remíza"; break;
-                case "kurz02": lb_vysledok.Text = $"{rozdelenie[1]} neprehrá"; break;
-                case "kurz2": lb_vysledok.Text = $"{rozdelenie[1]} vyhrá"; break;
+                case "kurz02": lb_vysledok.Text = $"{rozdelenie[1]} neprehrá2"; break;
+                case "kurz2": lb_vysledok.Text = $"{rozdelenie[1]} vyhrá2"; break;
                 default: lb_vysledok.Text = $"nefunguje{rozdelenie[0]}"; break;
                 
             }

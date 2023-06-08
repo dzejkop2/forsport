@@ -187,6 +187,12 @@
     <Compile Include="vysledky.Designer.cs">
       <DependentUpon>vysledky.cs</DependentUpon>
     </Compile>
+    <Compile Include="zapasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zapasy.Designer.cs">
+      <DependentUpon>zapasy.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="account.resx">
       <DependentUpon>account.cs</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vysledky.resx">
       <DependentUpon>vysledky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zapasy.resx">
+      <DependentUpon>zapasy.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
