@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
 using System.Runtime.InteropServices;
+using MySql.Data.MySqlClient;
 
 namespace ForSport
 {
@@ -32,8 +33,23 @@ namespace ForSport
         public string Mail { get => mail; set => mail = value; }
         public float Balance { get => balance; set => balance = value; }
 
-        private void refresh_balance()
+        public void refresh_balance()
         {
+            string sql_balance = $"SELECT balance FROM user_balance WHERE id = \'{this.Id}\'";
+            MySqlCommand command_balance = new MySqlCommand(sql_balance, Database.connection);
+            MySqlDataReader reader_balance = command_balance.ExecuteReader();
+
+            if (!reader_balance.HasRows)
+            {
+                reader_balance.Close();
+                MessageBox.Show("Nemas balance");
+            }
+            while (reader_balance.Read())
+            {
+                this.Balance = reader_balance.GetFloat("balance");
+            }
+            reader_balance.Close();
+
             lb_balance.Text = $"Balance: {this.Balance}" + "€";
         }
 
@@ -94,7 +110,7 @@ namespace ForSport
 
         private void bt_kurzy_Click(object sender, EventArgs e)
         {
-            loadform(new kurzy(this.Id, this.Balance));
+            loadform(new kurzy(this.Id, this.Balance, this));
         }
 
         private void bt_live_Click(object sender, EventArgs e)
@@ -144,7 +160,7 @@ namespace ForSport
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            loadform(new zapasy());
+            loadform(new zapasy(this));
         }
 
         private void btn_exit_Click(object sender, EventArgs e)

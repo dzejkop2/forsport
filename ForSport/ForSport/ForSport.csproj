@@ -118,7 +118,9 @@
     <Compile Include="Classes\Odds.cs" />
     <Compile Include="Classes\Pavuk.cs" />
     <Compile Include="Classes\Register.cs" />
+    <Compile Include="Classes\Stavky.cs" />
     <Compile Include="Classes\Teams.cs" />
+    <Compile Include="Classes\Zapasy.cs" />
     <Compile Include="pavuk.cs">
       <SubType>Form</SubType>
     </Compile>
