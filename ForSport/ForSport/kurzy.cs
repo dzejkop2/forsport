@@ -23,6 +23,7 @@ namespace ForSport
         {
             
             InitializeComponent();
+            bt_stavit.FlatAppearance.BorderSize = 0;
             this.id = id;
             this.balance = balance;
             
@@ -31,6 +32,7 @@ namespace ForSport
             {
                 odd.create_odd();
             }
+            load_btn_events();
             
         }
         private void get_odds()
@@ -55,14 +57,7 @@ namespace ForSport
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*Button btn_skuska = new Button();
-            btn_skuska.BackColor = Color.Black;
-            btn_skuska.Enabled = false;
-            btn_skuska.Text = "SKUSKA";
-            btn_skuska.Location = new Point(0, 0);
-            btn_skuska.Size = new Size(500, 500);
-            btn_skuska.BringToFront();
-            this.Controls.Add(btn_skuska);*/
+            
             
         }
         private void deal_event(string meno, string kurz)

@@ -20,6 +20,8 @@ namespace ForSport
         public zapasy()
         {
             InitializeComponent();
+            button1.FlatAppearance.BorderSize = 0;
+            bt_generuj.FlatAppearance.BorderSize = 0;
         }
 
         private void bt_generuj_Click(object sender, EventArgs e)
@@ -179,10 +181,10 @@ namespace ForSport
                 }
                 
             }
+
             reader.Close();
 
-            
-            }
+        }
         private void change_balance(string id, string peniaze)
         {
             string balance ="0";

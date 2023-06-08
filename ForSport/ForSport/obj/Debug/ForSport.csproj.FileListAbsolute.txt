@@ -193,3 +193,4 @@ C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\Fo
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.user_info.resources
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.vysledky.resources
 C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.pavuk.resources
+C:\Users\simon\OneDrive\Počítač\.code\forsport\ForSport\ForSport\obj\Debug\ForSport.zapasy.resources

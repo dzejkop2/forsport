@@ -50,36 +50,6 @@ namespace ForSport.Classes
             main_odds_panel.BringToFront();
             Panel.Controls.Add(main_odds_panel);
 
-            /*Label lb_name = new Label();
-            lb_name.Text = this.Name;
-            lb_name.Location = new Point(3, 10);
-            lb_name.ForeColor = Color.FromArgb(46, 124, 196);
-            lb_name.Font = new Font("Microsoft Sans Serif", 12);
-            main_comment_panel.Controls.Add(lb_name);
-
-            Label lb_date = new Label();
-            lb_date.Text = this.Date;
-            lb_date.Location = new Point(main_comment_panel.Size.Width - 130, 10);
-            lb_date.Size = new System.Drawing.Size(150, 20);
-            lb_date.ForeColor = Color.FromArgb(0, 0, 0);
-            lb_date.Font = new Font("Microsoft Sans Serif", 9);
-            main_comment_panel.Controls.Add(lb_date);
-
-            Panel comment_panel = new Panel();
-            comment_panel.Location = new System.Drawing.Point(7, 34);
-            comment_panel.Size = new System.Drawing.Size(main_comment_panel.Size.Width - 30, 43);
-            comment_panel.BackColor = Color.FromArgb(233, 248, 253);
-            comment_panel.BringToFront();
-            main_comment_panel.Controls.Add(comment_panel);
-
-            Label lb_text = new Label();
-            lb_text.Text = this.Text;
-            lb_text.Location = new Point(5, 5);
-            lb_text.ForeColor = Color.FromArgb(0, 0, 0);
-            lb_text.Size = new Size(comment_panel.Size.Width, comment_panel.Size.Height);
-            lb_text.Font = new Font("Microsoft Sans Serif", 10);
-            comment_panel.Controls.Add(lb_text);*/
-
             Label lb_name = new Label();
             lb_name.Name = "lb_main";
             lb_name.AutoSize = true;
@@ -102,7 +72,6 @@ namespace ForSport.Classes
             btn_kurz1.Size = new Size(55, 30);
             btn_kurz1.Text = this.Kurz1;
             btn_kurz1.ForeColor = Color.FromArgb(0, 92, 178);
-            btn_kurz1.BackColor = Color.Red;
             btn_kurz1.Location = new Point(main_odds_panel.Width-286, main_odds_panel.Height / 2 - btn_kurz1.Height / 2);
             btn_kurz1.Font = new Font("Microsoft Sans Serif", 12);
             main_odds_panel.Controls.Add(btn_kurz1);

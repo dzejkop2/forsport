@@ -34,26 +34,30 @@
             // 
             // bt_generuj
             // 
-            this.bt_generuj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.bt_generuj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.bt_generuj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bt_generuj.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bt_generuj.ForeColor = System.Drawing.Color.Black;
             this.bt_generuj.Location = new System.Drawing.Point(342, 246);
             this.bt_generuj.Name = "bt_generuj";
             this.bt_generuj.Size = new System.Drawing.Size(186, 94);
             this.bt_generuj.TabIndex = 0;
             this.bt_generuj.Text = "Generuj zápasy";
-            this.bt_generuj.UseVisualStyleBackColor = true;
+            this.bt_generuj.UseVisualStyleBackColor = false;
             this.bt_generuj.Click += new System.EventHandler(this.bt_generuj_Click);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(239)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(597, 246);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 94);
             this.button1.TabIndex = 1;
             this.button1.Text = "Vyhodnoť zápasy";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // zapasy
